@@ -1,0 +1,18 @@
+<h1>Listing userlogbooks</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for userlogbook in @userlogbooks %>
+  <tr>
+    <td><%= link_to 'Show', userlogbook %></td>
+    <td><%= link_to 'Edit', edit_userlogbook_path(userlogbook) %></td>
+    <td><%= link_to 'Destroy', userlogbook, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New userlogbook', new_userlogbook_path %>

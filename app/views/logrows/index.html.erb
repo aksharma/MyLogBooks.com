@@ -1,0 +1,63 @@
+<fieldset id="tablefs">
+<table cellspacing="0" id="pilottable" summary="Your logbook entries.">
+<caption><h1>Logbook</h1></caption>
+    <div class="digg_pagination">
+      <div class="page_info">
+        <%= page_entries_info @logrows %>
+      </div>
+      <%= will_paginate @logrows, :container => false %>
+    </div>
+<colgroup>
+	<% @col_order.each do |colname| %>
+		<col id="col<%= colname %>" />
+	<% end %>
+</colgroup>	
+<thead>
+	<tr>
+		<% @title_rec.each do |heading| %>
+			<th><%= heading %></th>
+		<% end %>
+	</tr>
+</thead>
+<tbody>
+<% for @logrow in @logrows %>
+	<tr>
+		<% @col_order.each do |colname| %>
+			<%	if colname == "flt_date" %>
+					<td><div id="spfltdt"><%= link_to @logrow.flt_date, edit_logrow_path(@logrow) %></div></td>
+			<%	elsif colname == "remarks" %>
+					<td><div id="spremarks"><%= @logrow.remarks %></div></td>
+			<%	else %>
+					<td><%= @logrow.send(colname) %></td>
+			<%	end %>
+		<% end %>
+	</tr>
+<% end %>
+<% (@per_page - @logrows.size).times do %>
+	<tr>
+		<%=	"<td></td>" * 18 %>
+	</tr>
+<% end %>
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan="6" style="text-align: right;">PAGE TOTALS: </td>
+		<% for fld in @numeric_col %>
+			<td><%= @page_totals[fld] %></td>
+		<% end %>
+	</tr>
+	<tr>
+		<td colspan="6" style="text-align: right;">GRAND TOTALS: </td>
+		<% for fld in @numeric_col %>
+			<td><%= @grand_totals[fld] %></td>
+		<% end %>
+	</tr>
+</tfoot>
+</table>
+
+<br />
+<div id="actionlink">
+	<%= link_to 'New Entry', new_logrow_path %>
+	<%= link_to 'Print This Page', :action => :pdf %>
+</div>
+</fieldset>

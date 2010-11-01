@@ -1,0 +1,40 @@
+<div id="homefs">
+	<div id="whatfs">
+		<h1>What is MyLogBooks?</h1>
+	
+		<h3>MyLogBooks is a FREE online logbook for airplane pilots.<p><br /></h3>
+	</div>
+	<div id="joinfs">
+		<h1>Join Now</h1>
+		<h3>Sign up today and enjoy all the benefits available to registered users.</h3>
+		<br />
+		<%= button_to "Join Now" , signup_url %>
+		<br />
+	</div>	
+	<div id="loginfs">
+		<h1>Login</h1>
+	
+		<% form_tag session_path do -%>
+	
+			<p><label for="login">Login</label><br/>
+			<%= text_field_tag 'login' %></p>
+			
+			<p><label for="password">Password</label><br/>
+			<%= password_field_tag 'password' %></p>
+			
+			<!-- Uncomment this if you want this functionality
+			<p><label for="remember_me">Remember me:</label>
+			<%= check_box_tag 'remember_me' %></p>
+			-->
+			
+			<p><%= submit_tag 'Log in', :class => "submits" %></p>
+		<% end -%>
+	</div>
+	<div id="demofs">
+		<h1>Try as a Guest</h1>
+		<h3>The Guest login give you a full featured access to MyLogBooks.</h3>
+		<br />
+		<%= button_to "Guest Login" , demo_url %>
+		<br />
+	</div>	
+</div>

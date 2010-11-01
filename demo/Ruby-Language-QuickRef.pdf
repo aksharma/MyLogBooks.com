@@ -1,0 +1,1470 @@
+%PDF-1.3
+%√¢√£√è√ì
+
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R>>
+endobj
+2 0 obj
+<< /Type /Outlines >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+26 0 R
+]
+/Count 2
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 10 0 R
+/F2 13 0 R
+/F3 16 0 R
+/F4 22 0 R >>
+>>
+/MediaBox [0 0 792.0 612.0]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/CreationDate (D:200806251946)
+/Creator (qr-language.rb)
+/Title (Ruby Language Quick Reference)
+/Author (Ryan Davis)
+/Subject (The Ruby Programming Language)
+/Producer (PDF::Writer for Ruby)
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents [
+7 0 R
+8 0 R
+11 0 R
+14 0 R
+17 0 R
+18 0 R
+19 0 R
+20 0 R
+23 0 R
+24 0 R
+25 0 R
+]
+>>
+endobj
+7 0 obj
+<<
+/Length 9979 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+BT 72.430 579.492 Td /F1 13.0 Tf 0 Tr (Ruby Language QuickRef) Tj ET
+q
+1 w 0 J 0 j [ ] 0 d
+0.000 0.000 0.000 RG
+18.000 576.992 m
+263.333 576.992 l S
+1 w
+Q
+BT 18.000 563.332 Td /F1 10.0 Tf 0 Tr (General Syntax Rules) Tj ET
+0.800 0.800 0.800 RG
+q
+0.800 0.800 0.800 rg
+18.000 551.328 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 529.936 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 501.848 235.333 10.696 re f
+1 w
+Q
+BT 18.000 497.576 Td /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 486.416 Td /F1 10.0 Tf 0 Tr (Reserved Words) Tj ET
+q
+0.800 0.800 0.800 rg
+18.000 474.586 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 453.926 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 433.266 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 412.606 235.333 10.330 re f
+1 w
+Q
+BT 18.000 408.526 Td /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 397.366 Td /F1 10.0 Tf 0 Tr (Types) Tj ET
+BT 18.000 391.786 Td 0.307 Tw /F1 5.0 Tf 0 Tr (Basic types are numbers, strings, ranges, regexen, symbols, arrays, and hashes. Also included are files because they are ) Tj ET
+BT 18.000 386.206 Td 0.000 Tw /F1 5.0 Tf 0 Tr (used so often.
+) Tj ET
+BT 18.000 377.278 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Numbers) Tj ET
+q
+0.800 0.800 0.800 rg
+18.000 365.274 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 343.882 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 322.490 235.333 10.696 re f
+1 w
+Q
+BT 18.000 307.522 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 298.594 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Strings) Tj ET
+BT 18.000 293.014 Td 0.621 Tw /F1 5.0 Tf 0 Tr (In all of the %\(\) cases below, you may use any matching characters or any single character for delimiters. %[], %!!, ) Tj ET
+BT 18.000 287.434 Td 0.000 Tw /F1 5.0 Tf 0 Tr (%@@, etc.
+) Tj ET
+q
+0.800 0.800 0.800 rg
+18.000 275.604 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 254.944 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 234.284 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 200.964 235.333 16.660 re f
+1 w
+Q
+BT 18.000 196.884 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 189.072 Td 0.000 Tw /F3 7.0 Tf 0 Tr (Backslashes) Tj ET
+BT 18.000 183.797 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\t \(tab\), \\n \(newline\), \\r \(carriage return\),
+) Tj ET
+BT 18.000 178.522 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\f \(form feed\), \\b \(backspace\), \\a \(bell\),
+) Tj ET
+BT 18.000 173.247 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\e \(escape\), \\s \(whitespace\), \\nnn \(octal\),
+) Tj ET
+BT 18.000 167.972 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\xnn \(hexadecimal\), \\cx \(control x\),
+) Tj ET
+BT 18.000 162.697 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\C-x \(control x\), \\M-x \(meta x\),
+) Tj ET
+BT 18.000 157.422 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \\M-\\C-x \(meta control x\)
+) Tj ET
+BT 18.000 152.147 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 144.335 Td 0.000 Tw /F3 7.0 Tf 0 Tr (Here Docs) Tj ET
+BT 18.000 139.060 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<identifier    # interpolation
+) Tj ET
+BT 18.000 133.785 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<"identifier"  # interpolation
+) Tj ET
+BT 18.000 128.510 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<'identifier'  # no interpolation
+) Tj ET
+BT 18.000 123.235 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<-identifier   # interpolation, indented end
+) Tj ET
+BT 18.000 117.960 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<-"identifier" # interpolation, indented end
+) Tj ET
+BT 18.000 112.685 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    <<-'identifier' # no interpolation, indented end
+) Tj ET
+BT 18.000 107.410 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 98.482 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Symbols) Tj ET
+BT 18.000 92.902 Td 0.000 Tw /F1 5.0 Tf 0 Tr (A symbol \(:symbol\) is an immutable name used for identifiers, variables, and operators.
+) Tj ET
+BT 18.000 83.974 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Ranges) Tj ET
+BT 18.000 78.699 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    1..10
+) Tj ET
+BT 18.000 73.424 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    'a'..'z'
+) Tj ET
+BT 18.000 68.149 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \(1..10\) === 5   -> true
+) Tj ET
+BT 18.000 62.874 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    \(1..10\) === 15  -> false
+) Tj ET
+BT 18.000 57.599 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 52.324 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # prints lines starting at 'start' and
+) Tj ET
+BT 18.000 47.049 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # ending at 'end'
+) Tj ET
+BT 18.000 41.774 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  while gets
+) Tj ET
+BT 18.000 36.499 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    print if /start/../end/
+) Tj ET
+BT 18.000 31.224 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  end
+) Tj ET
+BT 18.000 25.949 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 20.674 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  class RangeThingy
+) Tj ET
+BT 273.333 588.725 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    def <=>\(rhs\)
+) Tj ET
+BT 273.333 583.450 Td 0.000 Tw /F2 5.0 Tf 0 Tr (      # ...
+) Tj ET
+BT 273.333 578.175 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    end
+) Tj ET
+BT 273.333 572.900 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    def succ
+) Tj ET
+BT 273.333 567.625 Td 0.000 Tw /F2 5.0 Tf 0 Tr (      # ...
+) Tj ET
+BT 273.333 562.350 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    end
+) Tj ET
+BT 273.333 557.075 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  end
+) Tj ET
+BT 273.333 551.800 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  range = RangeThingy.new\(lower_bound\) .. RangeThingy.new\(upper_bound\)
+) Tj ET
+BT 273.333 546.525 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 537.597 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Regular Expressions) Tj ET
+BT 273.333 532.322 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    /normal regex/[xim]
+) Tj ET
+BT 273.333 527.047 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    %r|alternate form|[xim]
+) Tj ET
+BT 273.333 521.772 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    Regexp.new\(pattern, options\)
+) Tj ET
+BT 273.333 516.497 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+q
+0.800 0.800 0.800 rg
+294.575 504.493 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 483.101 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 461.709 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 440.317 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 418.925 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 397.533 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 376.141 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 354.749 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 333.357 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 311.965 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 290.573 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 269.181 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 247.789 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 226.397 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 205.005 192.849 10.696 re f
+0.800 0.800 0.800 rg
+294.575 183.613 192.849 10.696 re f
+1 w
+Q
+BT 273.333 179.341 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 170.413 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Arrays) Tj ET
+BT 273.333 165.138 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  [1, 2, 3]
+) Tj ET
+BT 273.333 159.863 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  %w\(foo bar baz\)     # no interpolation
+) Tj ET
+BT 273.333 154.588 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  %W\(foo #{bar} baz\)  # interpolation
+) Tj ET
+BT 273.333 149.313 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 143.733 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Indexes may be negative, and they index backwards \(-1 is the last element\).
+) Tj ET
+BT 273.333 134.805 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Hashes) Tj ET
+BT 273.333 129.530 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  { 1 => 2, 2 => 4, 3 => 6 }
+) Tj ET
+BT 273.333 124.255 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  { expr => expr, ... }
+) Tj ET
+BT 273.333 118.980 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 110.052 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Files) Tj ET
+BT 273.333 104.472 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Common methods include:
+) Tj ET
+q
+0.800 0.800 0.800 rg
+273.333 92.468 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 71.076 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 49.684 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 28.292 235.333 10.696 re f
+1 w
+Q
+BT 273.333 24.020 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 586.188 Td 0.000 Tw /F3 7.0 Tf 0 Tr (Mode Strings) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 574.184 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 552.792 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 518.008 235.333 17.392 re f
+0.800 0.800 0.800 rg
+528.667 483.224 235.333 17.392 re f
+1 w
+Q
+BT 528.667 478.952 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 467.792 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Variables and Constants) Tj ET
+BT 528.667 462.517 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  $global_variable
+) Tj ET
+BT 528.667 457.242 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  @instance_variable
+) Tj ET
+BT 528.667 451.967 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  [OtherClass::]CONSTANT
+) Tj ET
+BT 528.667 446.692 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  local_variable
+) Tj ET
+BT 528.667 441.417 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 430.257 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Pseudo-variables) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 418.253 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 396.861 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 375.469 235.333 10.696 re f
+1 w
+Q
+BT 528.667 360.501 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 349.341 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Pre-defined Variables) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 337.337 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 315.945 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 294.553 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 273.161 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 251.769 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 230.377 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 208.985 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 187.593 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 166.201 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 144.809 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 123.417 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 102.025 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 80.633 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 59.241 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 37.849 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 16.457 235.333 10.696 re f
+1 w
+Q
+endstream
+endobj
+
+8 0 obj
+<<
+/Length 123 >>
+stream
+
+q
+0.000 0.000 0.000 RG
+1 w 0 J 0 j [ ] 0 d
+268.333 594.000 m
+268.333 18.000 l S
+523.667 594.000 m
+523.667 18.000 l S
+1 w
+Q
+endstream
+endobj
+
+9 0 obj
+<< /Type /Encoding
+/BaseEncoding /WinAnsiEncoding
+/Differences 
+[
+148  /copyright
+]
+>>
+endobj
+10 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Roman
+/Encoding 9 0 R
+>>
+endobj
+11 0 obj
+<<
+/Length 619 >>
+stream
+
+BT 23.000 554.636 Td /F1 6.0 Tf 0 Tr (Comments start with a pound/sharp \(#\) character and go to EOL.) Tj ET
+BT 23.000 543.940 Td /F1 6.0 Tf 0 Tr (Lines between ë=beginí and ë=endí are skipped by the interpreter.) Tj ET
+BT 23.000 533.244 Td /F1 6.0 Tf 0 Tr (Ruby programs are sequence of expressions.) Tj ET
+BT 23.000 522.548 Td /F1 6.0 Tf 0 Tr (Each expression is delimited by semicolons \(;\) or newlines unless obviously incomplete \(e.g. ) Tj ET
+BT 23.000 515.852 Td /F1 6.0 Tf 0 Tr (trailing ë+í\).) Tj ET
+BT 23.000 505.156 Td /F1 6.0 Tf 0 Tr (Backslashes at the end of line does not terminate expression.) Tj ET
+endstream
+endobj
+
+12 0 obj
+<< /Type /Encoding
+/BaseEncoding /WinAnsiEncoding
+/Differences 
+[
+148  /copyright
+]
+>>
+endobj
+13 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Courier
+/Encoding 12 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 598 >>
+stream
+
+BT 23.000 478.086 Td /F2 6.0 Tf 0 Tr (alias   and     BEGIN   begin   break   case) Tj ET
+BT 23.000 467.756 Td /F2 6.0 Tf 0 Tr (class   def     defined do      else    elsif) Tj ET
+BT 23.000 457.426 Td /F2 6.0 Tf 0 Tr (END     end     ensure  false   for     if) Tj ET
+BT 23.000 447.096 Td /F2 6.0 Tf 0 Tr (in      module  next    nil     not     or) Tj ET
+BT 23.000 436.766 Td /F2 6.0 Tf 0 Tr (redo    rescue  retry   return  self    super) Tj ET
+BT 23.000 426.436 Td /F2 6.0 Tf 0 Tr (then    true    undef   unless  until   when ) Tj ET
+BT 23.000 416.106 Td /F2 6.0 Tf 0 Tr (while   yield) Tj ET
+endstream
+endobj
+
+15 0 obj
+<< /Type /Encoding
+/BaseEncoding /WinAnsiEncoding
+/Differences 
+[
+148  /copyright
+]
+>>
+endobj
+16 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Times-Italic
+/Encoding 15 0 R
+>>
+endobj
+17 0 obj
+<<
+/Length 485 >>
+stream
+
+BT 23.000 368.582 Td 0.000 Tw /F1 6.0 Tf 0 Tr (123 1_234 123.45 1.2e-3) Tj ET
+BT 23.000 357.886 Td 0.000 Tw /F1 6.0 Tf 0 Tr (0xffff \(hex\) 0b01011 \(binary\) 0377 \(octal\)) Tj ET
+BT 23.000 347.190 Td 0.000 Tw /F1 6.0 Tf 0 Tr (?a       ASCII character) Tj ET
+BT 23.000 336.494 Td 0.000 Tw /F1 6.0 Tf 0 Tr (?\\C-a    Control-a) Tj ET
+BT 23.000 325.798 Td 0.000 Tw /F1 6.0 Tf 0 Tr (?\\M-a    Meta-a) Tj ET
+BT 23.000 315.102 Td 0.000 Tw /F1 6.0 Tf 0 Tr (?\\M-\\C-a Meta-Control-a) Tj ET
+endstream
+endobj
+
+18 0 obj
+<<
+/Length 773 >>
+stream
+
+BT 23.000 279.104 Td 0.000 Tw /F2 6.0 Tf 0 Tr ('no interpolation') Tj ET
+BT 23.000 268.774 Td 0.000 Tw /F2 6.0 Tf 0 Tr ("#{interpolation} and backslashes\\n") Tj ET
+BT 23.000 258.444 Td 0.000 Tw /F2 6.0 Tf 0 Tr (%q\(no interpolation\)) Tj ET
+BT 23.000 248.114 Td 0.000 Tw /F2 6.0 Tf 0 Tr (%Q\(interpolation and backslashes\)) Tj ET
+BT 23.000 237.784 Td 0.000 Tw /F2 6.0 Tf 0 Tr (%\(interpolation and backslashes\)) Tj ET
+BT 23.000 227.454 Td 0.000 Tw /F2 6.0 Tf 0 Tr (`echo command interpretation with interpolation and ) Tj ET
+BT 23.000 221.124 Td 0.000 Tw /F2 6.0 Tf 0 Tr (backslashes`) Tj ET
+BT 23.000 210.794 Td 0.000 Tw /F2 6.0 Tf 0 Tr (%x\(echo command interpretation with interpolation and ) Tj ET
+BT 23.000 204.464 Td 0.000 Tw /F2 6.0 Tf 0 Tr (backslashes\)) Tj ET
+endstream
+endobj
+
+19 0 obj
+<<
+/Length 4586 >>
+stream
+
+BT 299.575 507.801 Td 0.000 Tw /F1 6.0 Tf 0 Tr (.) Tj ET
+BT 330.949 507.801 Td 0.000 Tw /F1 6.0 Tf 0 Tr (any character except newline) Tj ET
+BT 299.575 497.105 Td 0.000 Tw /F1 6.0 Tf 0 Tr ([set]) Tj ET
+BT 330.949 497.105 Td 0.000 Tw /F1 6.0 Tf 0 Tr (any single character of set) Tj ET
+BT 299.575 486.409 Td 0.000 Tw /F1 6.0 Tf 0 Tr ([^set]) Tj ET
+BT 330.949 486.409 Td 0.000 Tw /F1 6.0 Tf 0 Tr (any single character NOT of set) Tj ET
+BT 299.575 475.713 Td 0.000 Tw /F1 6.0 Tf 0 Tr (*) Tj ET
+BT 330.949 475.713 Td 0.000 Tw /F1 6.0 Tf 0 Tr (0 or more previous regular expression) Tj ET
+BT 299.575 465.017 Td 0.000 Tw /F1 6.0 Tf 0 Tr (*?) Tj ET
+BT 330.949 465.017 Td 0.000 Tw /F1 6.0 Tf 0 Tr (0 or more previous regular expression \(non greedy\)) Tj ET
+BT 299.575 454.321 Td 0.000 Tw /F1 6.0 Tf 0 Tr (+) Tj ET
+BT 330.949 454.321 Td 0.000 Tw /F1 6.0 Tf 0 Tr (1 or more previous regular expression) Tj ET
+BT 299.575 443.625 Td 0.000 Tw /F1 6.0 Tf 0 Tr (+?) Tj ET
+BT 330.949 443.625 Td 0.000 Tw /F1 6.0 Tf 0 Tr (1 or more previous regular expression \(non greedy\)) Tj ET
+BT 299.575 432.929 Td 0.000 Tw /F1 6.0 Tf 0 Tr (?) Tj ET
+BT 330.949 432.929 Td 0.000 Tw /F1 6.0 Tf 0 Tr (0 or 1 previous regular expression) Tj ET
+BT 299.575 422.233 Td 0.000 Tw /F1 6.0 Tf 0 Tr (|) Tj ET
+BT 330.949 422.233 Td 0.000 Tw /F1 6.0 Tf 0 Tr (alternation) Tj ET
+BT 299.575 411.537 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\( \)) Tj ET
+BT 330.949 411.537 Td 0.000 Tw /F1 6.0 Tf 0 Tr (grouping regular expressions) Tj ET
+BT 299.575 400.841 Td 0.000 Tw /F1 6.0 Tf 0 Tr (^) Tj ET
+BT 330.949 400.841 Td 0.000 Tw /F1 6.0 Tf 0 Tr (beginning of a line or string) Tj ET
+BT 299.575 390.145 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($) Tj ET
+BT 330.949 390.145 Td 0.000 Tw /F1 6.0 Tf 0 Tr (end of a line or string) Tj ET
+BT 299.575 379.449 Td 0.000 Tw /F1 6.0 Tf 0 Tr (#{m,n}) Tj ET
+BT 330.949 379.449 Td 0.000 Tw /F1 6.0 Tf 0 Tr (at least m but most n previous regular expression) Tj ET
+BT 299.575 368.753 Td 0.000 Tw /F1 6.0 Tf 0 Tr (#{m,n}?) Tj ET
+BT 330.949 368.753 Td 0.000 Tw /F1 6.0 Tf 0 Tr (at least m but most n previous regular expression \(non greedy\)) Tj ET
+BT 299.575 358.057 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\A) Tj ET
+BT 330.949 358.057 Td 0.000 Tw /F1 6.0 Tf 0 Tr (beginning of a string) Tj ET
+BT 299.575 347.361 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\b) Tj ET
+BT 330.949 347.361 Td 0.000 Tw /F1 6.0 Tf 0 Tr (backspace \(0x08, inside [] only\)) Tj ET
+BT 299.575 336.665 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\B) Tj ET
+BT 330.949 336.665 Td 0.000 Tw /F1 6.0 Tf 0 Tr (non-word boundary) Tj ET
+BT 299.575 325.969 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\b) Tj ET
+BT 330.949 325.969 Td 0.000 Tw /F1 6.0 Tf 0 Tr (word boundary \(outside [] only\)) Tj ET
+BT 299.575 315.273 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\d) Tj ET
+BT 330.949 315.273 Td 0.000 Tw /F1 6.0 Tf 0 Tr (digit, same as[0-9]) Tj ET
+BT 299.575 304.577 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\D) Tj ET
+BT 330.949 304.577 Td 0.000 Tw /F1 6.0 Tf 0 Tr (non-digit) Tj ET
+BT 299.575 293.881 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\S) Tj ET
+BT 330.949 293.881 Td 0.000 Tw /F1 6.0 Tf 0 Tr (non-whitespace character) Tj ET
+BT 299.575 283.185 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\s) Tj ET
+BT 330.949 283.185 Td 0.000 Tw /F1 6.0 Tf 0 Tr (whitespace character[ \\t\\n\\r\\f]) Tj ET
+BT 299.575 272.489 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\W) Tj ET
+BT 330.949 272.489 Td 0.000 Tw /F1 6.0 Tf 0 Tr (non-word character) Tj ET
+BT 299.575 261.793 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\w) Tj ET
+BT 330.949 261.793 Td 0.000 Tw /F1 6.0 Tf 0 Tr (word character[0-9A-Za-z_]) Tj ET
+BT 299.575 251.097 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\z) Tj ET
+BT 330.949 251.097 Td 0.000 Tw /F1 6.0 Tf 0 Tr (end of a string) Tj ET
+BT 299.575 240.401 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\\Z) Tj ET
+BT 330.949 240.401 Td 0.000 Tw /F1 6.0 Tf 0 Tr (end of a string, or before newline at the end) Tj ET
+BT 299.575 229.705 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(?# \)) Tj ET
+BT 330.949 229.705 Td 0.000 Tw /F1 6.0 Tf 0 Tr (comment) Tj ET
+BT 299.575 219.009 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(?: \)) Tj ET
+BT 330.949 219.009 Td 0.000 Tw /F1 6.0 Tf 0 Tr (grouping without backreferences) Tj ET
+BT 299.575 208.313 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(?= \)) Tj ET
+BT 330.949 208.313 Td 0.000 Tw /F1 6.0 Tf 0 Tr (zero-width positive look-ahead assertion \(?! \)) Tj ET
+BT 299.575 197.617 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(?ix-ix\)) Tj ET
+BT 330.949 197.617 Td 0.000 Tw /F1 6.0 Tf 0 Tr (turns on/off i/x options, localized in group if any.) Tj ET
+BT 299.575 186.921 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(?ix-ix: \)) Tj ET
+BT 330.949 186.921 Td 0.000 Tw /F1 6.0 Tf 0 Tr (turns on/off i/x options, localized in non-capturing group.) Tj ET
+endstream
+endobj
+
+20 0 obj
+<<
+/Length 751 >>
+stream
+
+BT 278.333 95.776 Td 0.000 Tw /F1 6.0 Tf 0 Tr (File.join\(p1, p2, ... pN\) => ìp1/p2/.../pNî platform independent paths) Tj ET
+BT 278.333 85.080 Td 0.000 Tw /F1 6.0 Tf 0 Tr (File.new\(path, mode_string="r"\) => file) Tj ET
+BT 278.333 74.384 Td 0.000 Tw /F1 6.0 Tf 0 Tr (File.new\(path, mode_num [, perm_num]\) => file) Tj ET
+BT 278.333 63.688 Td 0.000 Tw /F1 6.0 Tf 0 Tr (File.open\(filename, mode_string="r"\) {|file| block} -> nil) Tj ET
+BT 278.333 52.992 Td 0.000 Tw /F1 6.0 Tf 0 Tr (File.open\(filename [, mode_num [, perm_num ]]\) {|file| block} -> nil) Tj ET
+BT 278.333 42.296 Td 0.000 Tw /F1 6.0 Tf 0 Tr (IO.foreach\(path, sepstring=$/\) {|line| block}) Tj ET
+BT 278.333 31.600 Td 0.000 Tw /F1 6.0 Tf 0 Tr (IO.readlines\(path\) => array) Tj ET
+endstream
+endobj
+
+21 0 obj
+<< /Type /Encoding
+/BaseEncoding /WinAnsiEncoding
+/Differences 
+[
+148  /copyright
+]
+>>
+endobj
+22 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F4
+/BaseFont /Times-Bold
+/Encoding 21 0 R
+>>
+endobj
+23 0 obj
+<<
+/Length 1617 >>
+stream
+
+BT 533.667 577.492 Td 0.000 Tw /F1 6.0 Tf 0 Tr (r) Tj ET
+BT 561.168 577.492 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Read-only, starts at beginning of file \(default mode\).) Tj ET
+BT 533.667 566.796 Td 0.000 Tw /F1 6.0 Tf 0 Tr (r+) Tj ET
+BT 561.168 566.796 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Read-write, starts at beginning of file.) Tj ET
+BT 533.667 556.100 Td 0.000 Tw /F1 6.0 Tf 0 Tr (w) Tj ET
+BT 561.168 556.100 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Write-only, truncates existing file to zero length or creates a new file for writing.) Tj ET
+BT 533.667 545.404 Td 0.000 Tw /F1 6.0 Tf 0 Tr (w+) Tj ET
+BT 561.168 545.404 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Read-write, truncates existing file to zero length or creates a new file for reading ) Tj ET
+BT 561.168 538.708 Td 0.000 Tw /F1 6.0 Tf 0 Tr (and writing.) Tj ET
+BT 533.667 528.012 Td 0.000 Tw /F1 6.0 Tf 0 Tr (a) Tj ET
+BT 561.168 528.012 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Write-only, starts at end of file if file exists, otherwise creates a new file for ) Tj ET
+BT 561.168 521.316 Td 0.000 Tw /F1 6.0 Tf 0 Tr (writing.) Tj ET
+BT 533.667 510.620 Td 0.000 Tw /F1 6.0 Tf 0 Tr (a+) Tj ET
+BT 561.168 510.620 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Read-write, starts at end of file if file exists, otherwise creates a new file for ) Tj ET
+BT 561.168 503.924 Td 0.000 Tw /F1 6.0 Tf 0 Tr (reading and writing.) Tj ET
+BT 533.667 493.228 Td 0.000 Tw /F1 6.0 Tf 0 Tr (b) Tj ET
+BT 561.168 493.228 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Binary file mode \(may appear with any of the key letters listed above\). Only ) Tj ET
+BT 561.168 486.532 Td 0.000 Tw /F4 6.0 Tf 0 Tr (necessary) Tj /F1 6.0 Tf 0 Tr ( for DOS/Windows.) Tj ET
+endstream
+endobj
+
+24 0 obj
+<<
+/Length 965 >>
+stream
+
+BT 533.667 421.561 Td 0.000 Tw /F1 6.0 Tf 0 Tr (self) Tj ET
+BT 604.126 421.561 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the receiver of the current method) Tj ET
+BT 533.667 410.865 Td 0.000 Tw /F1 6.0 Tf 0 Tr (nil) Tj ET
+BT 604.126 410.865 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the sole instance of NilClass \(represents false\)) Tj ET
+BT 533.667 400.169 Td 0.000 Tw /F1 6.0 Tf 0 Tr (true) Tj ET
+BT 604.126 400.169 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the sole instance of TrueClass \(typical true value\)) Tj ET
+BT 533.667 389.473 Td 0.000 Tw /F1 6.0 Tf 0 Tr (false) Tj ET
+BT 604.126 389.473 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the sole instance of FalseClass \(represents false\)) Tj ET
+BT 533.667 378.777 Td 0.000 Tw /F1 6.0 Tf 0 Tr (__FILE__) Tj ET
+BT 604.126 378.777 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the current source file name.) Tj ET
+BT 533.667 368.081 Td 0.000 Tw /F1 6.0 Tf 0 Tr (__LINE__) Tj ET
+BT 604.126 368.081 Td 0.000 Tw /F1 6.0 Tf 0 Tr (the current line number in the source file.) Tj ET
+endstream
+endobj
+
+25 0 obj
+<<
+/Length 5072 >>
+stream
+
+BT 533.667 340.645 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($!) Tj ET
+BT 586.364 340.645 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The exception information message set by ëraiseí.) Tj ET
+BT 533.667 329.949 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($@) Tj ET
+BT 586.364 329.949 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Array of backtrace of the last exception thrown.) Tj ET
+BT 533.667 319.253 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($&) Tj ET
+BT 586.364 319.253 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The string matched by the last successful pattern match in this scope.) Tj ET
+BT 533.667 308.557 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($`) Tj ET
+BT 586.364 308.557 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The string to the left  of the last successful match.) Tj ET
+BT 533.667 297.861 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($') Tj ET
+BT 586.364 297.861 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The string to the right of the last successful match.) Tj ET
+BT 533.667 287.165 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($+) Tj ET
+BT 586.364 287.165 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The last bracket matched by the last successful match.) Tj ET
+BT 533.667 276.469 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($1) Tj ET
+BT 586.364 276.469 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The Nth group of the last successful match. May be > 1.) Tj ET
+BT 533.667 265.773 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($~) Tj ET
+BT 586.364 265.773 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The information about the last match in the current scope.) Tj ET
+BT 533.667 255.077 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($=) Tj ET
+BT 586.364 255.077 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The flag for case insensitive, nil by default.) Tj ET
+BT 533.667 244.381 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($/) Tj ET
+BT 586.364 244.381 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The input record separator, newline by default.) Tj ET
+BT 533.667 233.685 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($\\) Tj ET
+BT 586.364 233.685 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The output record separator for the print and IO#write. Default is nil.) Tj ET
+BT 533.667 222.989 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($,) Tj ET
+BT 586.364 222.989 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The output field separator for the print and Array#join.) Tj ET
+BT 533.667 212.293 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($;) Tj ET
+BT 586.364 212.293 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The default separator for String#split.) Tj ET
+BT 533.667 201.597 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($.) Tj ET
+BT 586.364 201.597 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The current input line number of the last file that was read.) Tj ET
+BT 533.667 190.901 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($<) Tj ET
+BT 586.364 190.901 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The virtual concatenation file of the files given on command line.) Tj ET
+BT 533.667 180.205 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($>) Tj ET
+BT 586.364 180.205 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The default output for print, printf. $stdout by default.) Tj ET
+BT 533.667 169.509 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($_) Tj ET
+BT 586.364 169.509 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The last input line of string by gets or readline.) Tj ET
+BT 533.667 158.813 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($0) Tj ET
+BT 586.364 158.813 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Contains the name of the script being executed. May be assignable.) Tj ET
+BT 533.667 148.117 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($*) Tj ET
+BT 586.364 148.117 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Command line arguments given for the script sans args.) Tj ET
+BT 533.667 137.421 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($$) Tj ET
+BT 586.364 137.421 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The process number of the Ruby running this script.) Tj ET
+BT 533.667 126.725 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($?) Tj ET
+BT 586.364 126.725 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The status of the last executed child process.) Tj ET
+BT 533.667 116.029 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($:) Tj ET
+BT 586.364 116.029 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Load path for scripts and binary modules by load or require.) Tj ET
+BT 533.667 105.333 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($") Tj ET
+BT 586.364 105.333 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The array contains the module names loaded by require.) Tj ET
+BT 533.667 94.637 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($DEBUG) Tj ET
+BT 586.364 94.637 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The status of the -d switch.) Tj ET
+BT 533.667 83.941 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($FILENAME) Tj ET
+BT 586.364 83.941 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Current input file from $<. Same as $<.filename.) Tj ET
+BT 533.667 73.245 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($LOAD_PATH) Tj ET
+BT 586.364 73.245 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to the $:.) Tj ET
+BT 533.667 62.549 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($stderr) Tj ET
+BT 586.364 62.549 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The current standard error output.) Tj ET
+BT 533.667 51.853 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($stdin) Tj ET
+BT 586.364 51.853 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The current standard input.) Tj ET
+BT 533.667 41.157 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($stdout) Tj ET
+BT 586.364 41.157 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The current standard output.) Tj ET
+BT 533.667 30.461 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($VERBOSE) Tj ET
+BT 586.364 30.461 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The verbose flag, which is set by the -v switch.) Tj ET
+BT 533.667 19.765 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-0) Tj ET
+BT 586.364 19.765 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to $/.) Tj ET
+endstream
+endobj
+
+26 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 38 0 R 40 0 R 42 0 R]
+/Contents [
+27 0 R
+8 0 R
+28 0 R
+29 0 R
+30 0 R
+31 0 R
+32 0 R
+33 0 R
+34 0 R
+35 0 R
+36 0 R
+37 0 R
+]
+>>
+endobj
+27 0 obj
+<<
+/Length 14884 >>
+stream
+
+1 w
+q
+q
+0.800 0.800 0.800 rg
+18.000 571.300 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 549.908 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 528.516 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 507.124 235.333 10.696 re f
+1 w
+Q
+BT 18.000 502.852 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 491.692 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Pre-defined Global Constants) Tj ET
+q
+0.800 0.800 0.800 rg
+18.000 479.688 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 458.296 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 436.904 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 415.512 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 394.120 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 372.728 235.333 10.696 re f
+0.800 0.800 0.800 rg
+18.000 351.336 235.333 10.696 re f
+1 w
+Q
+BT 18.000 347.064 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 335.904 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Expressions) Tj ET
+BT 18.000 326.976 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Terms) Tj ET
+BT 18.000 321.396 Td 0.043 Tw /F1 5.0 Tf 0 Tr (Terms are expressions that may be a basic type \(listed above\), a shell command, variable reference, constant reference, or ) Tj ET
+BT 18.000 315.816 Td 0.000 Tw /F1 5.0 Tf 0 Tr (method invocation.
+) Tj ET
+BT 18.000 306.888 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Operators and Precedence) Tj ET
+q
+0.800 0.800 0.800 rg
+18.000 295.058 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 274.398 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 253.738 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 233.078 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 212.418 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 191.758 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 171.098 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 150.438 235.333 10.330 re f
+0.800 0.800 0.800 rg
+18.000 129.778 235.333 10.330 re f
+1 w
+Q
+BT 18.000 125.698 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 116.770 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Control Expressions) Tj ET
+BT 18.000 111.495 Td 0.000 Tw /F2 5.0 Tf 0 Tr (if bool-expr [then]
+) Tj ET
+BT 18.000 106.220 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 18.000 100.945 Td 0.000 Tw /F2 5.0 Tf 0 Tr (elsif bool-expr [then]
+) Tj ET
+BT 18.000 95.670 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 18.000 90.395 Td 0.000 Tw /F2 5.0 Tf 0 Tr (else
+) Tj ET
+BT 18.000 85.120 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 18.000 79.845 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 18.000 74.570 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 69.295 Td 0.000 Tw /F2 5.0 Tf 0 Tr (unless bool-expr [then]
+) Tj ET
+BT 18.000 64.020 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 18.000 58.745 Td 0.000 Tw /F2 5.0 Tf 0 Tr (else
+) Tj ET
+BT 18.000 53.470 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 18.000 48.195 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 18.000 42.920 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 37.645 Td 0.000 Tw /F2 5.0 Tf 0 Tr (expr if     bool-expr
+) Tj ET
+BT 18.000 32.370 Td 0.000 Tw /F2 5.0 Tf 0 Tr (expr unless bool-expr
+) Tj ET
+BT 18.000 27.095 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 18.000 21.820 Td 0.000 Tw /F2 5.0 Tf 0 Tr (case target-expr
+) Tj ET
+BT 273.333 588.725 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # \(comparisons may be regexen\)
+) Tj ET
+BT 273.333 583.450 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  when comparison [, comparison]... [then]
+) Tj ET
+BT 273.333 578.175 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    body
+) Tj ET
+BT 273.333 572.900 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  when comparison [, comparison]... [then]
+) Tj ET
+BT 273.333 567.625 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    body
+) Tj ET
+BT 273.333 562.350 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  ...
+) Tj ET
+BT 273.333 557.075 Td 0.000 Tw /F2 5.0 Tf 0 Tr ([else
+) Tj ET
+BT 273.333 551.800 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body]
+) Tj ET
+BT 273.333 546.525 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 273.333 541.250 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 535.975 Td 0.000 Tw /F2 5.0 Tf 0 Tr (while bool-expr [do]
+) Tj ET
+BT 273.333 530.700 Td 0.000 Tw /F2 5.0 Tf 0 Tr ( body
+) Tj ET
+BT 273.333 525.425 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 273.333 520.150 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 514.875 Td 0.000 Tw /F2 5.0 Tf 0 Tr (until bool-expr [do]
+) Tj ET
+BT 273.333 509.600 Td 0.000 Tw /F2 5.0 Tf 0 Tr ( body
+) Tj ET
+BT 273.333 504.325 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 273.333 499.050 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 493.775 Td 0.000 Tw /F2 5.0 Tf 0 Tr (begin
+) Tj ET
+BT 273.333 488.500 Td 0.000 Tw /F2 5.0 Tf 0 Tr ( body
+) Tj ET
+BT 273.333 483.225 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end while bool-expr
+) Tj ET
+BT 273.333 477.950 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 472.675 Td 0.000 Tw /F2 5.0 Tf 0 Tr (begin
+) Tj ET
+BT 273.333 467.400 Td 0.000 Tw /F2 5.0 Tf 0 Tr ( body
+) Tj ET
+BT 273.333 462.125 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end until bool-expr
+) Tj ET
+BT 273.333 456.850 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 451.575 Td 0.000 Tw /F2 5.0 Tf 0 Tr (for name[, name]... in expr [do]
+) Tj ET
+BT 273.333 446.300 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 273.333 441.025 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 273.333 435.750 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 430.475 Td 0.000 Tw /F2 5.0 Tf 0 Tr (expr.each do | name[, name]... |
+) Tj ET
+BT 273.333 425.200 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  body
+) Tj ET
+BT 273.333 419.925 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 273.333 414.650 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 409.375 Td 0.000 Tw /F2 5.0 Tf 0 Tr (expr while bool-expr
+) Tj ET
+BT 273.333 404.100 Td 0.000 Tw /F2 5.0 Tf 0 Tr (expr until bool-expr
+) Tj ET
+BT 273.333 398.825 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+q
+0.800 0.800 0.800 rg
+273.333 386.821 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 365.429 235.333 10.696 re f
+1 w
+Q
+BT 273.333 350.461 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 339.301 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Invoking a Method) Tj ET
+BT 273.333 333.721 Td 0.267 Tw /F1 5.0 Tf 0 Tr (Nearly everything available in a method invocation is optional, consequently the syntax is very difficult to follow. Here ) Tj ET
+BT 273.333 328.141 Td 0.000 Tw /F1 5.0 Tf 0 Tr (are some examples:
+) Tj ET
+q
+0.800 0.800 0.800 rg
+273.333 316.137 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 294.745 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 273.353 235.333 10.696 re f
+1 w
+Q
+BT 273.333 258.385 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 253.110 Td 0.000 Tw /F2 5.0 Tf 0 Tr (call   := [receiver \('::' | '.'\)] name [params] [block]
+) Tj ET
+BT 273.333 247.835 Td 0.000 Tw /F2 5.0 Tf 0 Tr (params := \( [param]* [, hash] [*arr] [&proc] \)
+) Tj ET
+BT 273.333 242.560 Td 0.000 Tw /F2 5.0 Tf 0 Tr (block  := { body } | do body end
+) Tj ET
+BT 273.333 237.285 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 226.125 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Defining a Class) Tj ET
+BT 273.333 220.545 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Class names begin with capital characters.
+) Tj ET
+BT 273.333 215.270 Td 0.000 Tw /F2 5.0 Tf 0 Tr (class Identifier [ < Superclass ]; ... ; end
+) Tj ET
+BT 273.333 209.995 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 204.720 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # Singleton classes, or idioclasses;
+) Tj ET
+BT 273.333 199.445 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # add methods to a single instance
+) Tj ET
+BT 273.333 194.170 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    # obj can be self
+) Tj ET
+BT 273.333 188.895 Td 0.000 Tw /F2 5.0 Tf 0 Tr (class << obj; ...; end
+) Tj ET
+BT 273.333 183.620 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 172.460 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Defining a Module) Tj ET
+BT 273.333 166.880 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Module names begin with capital characters.
+) Tj ET
+BT 273.333 161.605 Td 0.000 Tw /F2 5.0 Tf 0 Tr (module Identifier; ...; end
+) Tj ET
+BT 273.333 150.445 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Defining a Method) Tj ET
+BT 273.333 145.170 Td 0.000 Tw /F2 5.0 Tf 0 Tr (def method_name\(arg_list\); ...; end
+) Tj ET
+BT 273.333 139.895 Td 0.000 Tw /F2 5.0 Tf 0 Tr (def expr.method_name\(arg_list\); ...; end
+) Tj ET
+BT 273.333 134.620 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+q
+0.800 0.800 0.800 rg
+273.333 122.616 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 101.224 235.333 10.696 re f
+1 w
+Q
+BT 273.333 79.560 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 70.632 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Access Restriction) Tj ET
+q
+0.800 0.800 0.800 rg
+273.333 58.628 235.333 10.696 re f
+0.800 0.800 0.800 rg
+273.333 30.540 235.333 10.696 re f
+1 w
+Q
+BT 273.333 26.268 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 273.333 20.688 Td 0.592 Tw /F1 5.0 Tf 0 Tr (Restriction used without arguments set the default access control. Used with arguments, sets the access of the named ) Tj ET
+BT 528.667 588.420 Td 0.000 Tw /F1 5.0 Tf 0 Tr (methods and constants.
+) Tj ET
+BT 528.667 583.145 Td 0.000 Tw /F2 5.0 Tf 0 Tr (class A
+) Tj ET
+BT 528.667 577.870 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  protected
+) Tj ET
+BT 528.667 572.595 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  def protected_method; ...; end
+) Tj ET
+BT 528.667 567.320 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 528.667 562.045 Td 0.000 Tw /F2 5.0 Tf 0 Tr (class B < A
+) Tj ET
+BT 528.667 556.770 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  public
+) Tj ET
+BT 528.667 551.495 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  def test_protected
+) Tj ET
+BT 528.667 546.220 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    myA = A.new
+) Tj ET
+BT 528.667 540.945 Td 0.000 Tw /F2 5.0 Tf 0 Tr (    myA.protected_method
+) Tj ET
+BT 528.667 535.670 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  end
+) Tj ET
+BT 528.667 530.395 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 528.667 525.120 Td 0.000 Tw /F2 5.0 Tf 0 Tr (b = B.new.test_protected
+) Tj ET
+BT 528.667 519.845 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 512.033 Td 0.000 Tw /F3 7.0 Tf 0 Tr (Accessors) Tj ET
+BT 528.667 506.453 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Module provides the following utility methods:
+) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 487.753 235.333 17.392 re f
+0.800 0.800 0.800 rg
+528.667 446.273 235.333 24.088 re f
+1 w
+Q
+BT 528.667 424.609 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 415.681 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Aliasing) Tj ET
+BT 528.667 410.406 Td 0.000 Tw /F2 5.0 Tf 0 Tr (alias <old> <new>
+) Tj ET
+BT 528.667 404.826 Td 0.460 Tw /F1 5.0 Tf 0 Tr (Creates a new reference to whatever old referred to. old can be any existing method, operator, global. It may not be a ) Tj ET
+BT 528.667 399.246 Td 0.000 Tw /F1 5.0 Tf 0 Tr (local, instance, constant, or class variable.
+) Tj ET
+BT 528.667 388.086 Td 0.000 Tw /F1 10.0 Tf 0 Tr (Blocks, Closures, and Procs) Tj ET
+BT 528.667 379.158 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Blocks/Closures) Tj ET
+BT 528.667 373.578 Td 0.000 Tw /F1 5.0 Tf 0 Tr (Blocks must follow a method invocation:
+) Tj ET
+BT 528.667 368.303 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation do ... end
+) Tj ET
+BT 528.667 363.028 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation do || ... end
+) Tj ET
+BT 528.667 357.753 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation do |arg_list| ... end
+) Tj ET
+BT 528.667 352.478 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation { ... }
+) Tj ET
+BT 528.667 347.203 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation { || ... }
+) Tj ET
+BT 528.667 341.928 Td 0.000 Tw /F2 5.0 Tf 0 Tr (invocation { |arg_list| ... }
+) Tj ET
+BT 528.667 336.653 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 324.649 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 303.257 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 275.169 235.333 10.696 re f
+1 w
+Q
+BT 528.667 270.897 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 261.969 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Proc Objects) Tj ET
+BT 528.667 256.389 Td 0.000 Tw /F1 5.0 Tf 0 Tr (See class Proc for more information. Created via:
+) Tj ET
+BT 528.667 251.114 Td 0.000 Tw /F2 5.0 Tf 0 Tr (Kernel#proc \(or Kernel#lambda\)
+) Tj ET
+BT 528.667 245.839 Td 0.000 Tw /F2 5.0 Tf 0 Tr (Proc#new
+) Tj ET
+BT 528.667 240.564 Td 0.000 Tw /F2 5.0 Tf 0 Tr (&block argument on a method
+) Tj ET
+BT 528.667 235.289 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 226.361 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Exceptions) Tj ET
+BT 528.667 221.086 Td 0.000 Tw /F2 5.0 Tf 0 Tr (begin
+) Tj ET
+BT 528.667 215.811 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  expr
+) Tj ET
+BT 528.667 210.536 Td 0.000 Tw /F2 5.0 Tf 0 Tr ([ rescue [ exception_class [ => var ], ... ]
+) Tj ET
+BT 528.667 205.261 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  expr ]
+) Tj ET
+BT 528.667 199.986 Td 0.000 Tw /F2 5.0 Tf 0 Tr ([ else
+) Tj ET
+BT 528.667 194.711 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  expr ]
+) Tj ET
+BT 528.667 189.436 Td 0.000 Tw /F2 5.0 Tf 0 Tr ([ ensure
+) Tj ET
+BT 528.667 184.161 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  expr ]
+) Tj ET
+BT 528.667 178.886 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 528.667 173.611 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 168.336 Td 0.000 Tw /F2 5.0 Tf 0 Tr (raise [ exception_class, ] [ message ]
+) Tj ET
+BT 528.667 163.061 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 157.481 Td 1.164 Tw /F1 5.0 Tf 0 Tr (The default exception_class for rescue is StandardError, not Exception. Raise without an exception_class raises a ) Tj ET
+BT 528.667 151.901 Td 0.000 Tw /F1 5.0 Tf 0 Tr (RuntimeError. All exception classes must inherit from Exception or one of its children \(listed below\).
+) Tj ET
+q
+0.800 0.800 0.800 rg
+528.667 119.809 235.333 30.784 re f
+0.800 0.800 0.800 rg
+528.667 98.417 235.333 10.696 re f
+0.800 0.800 0.800 rg
+528.667 77.025 235.333 10.696 re f
+1 w
+Q
+BT 528.667 62.057 Td 0.000 Tw /F1 5.0 Tf 0 Tr (
+) Tj ET
+BT 528.667 53.129 Td 0.000 Tw /F3 8.0 Tf 0 Tr (Catch and Throw) Tj ET
+BT 528.667 47.854 Td 0.000 Tw /F2 5.0 Tf 0 Tr (catch :label do
+) Tj ET
+BT 528.667 42.579 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  expr
+) Tj ET
+BT 528.667 37.304 Td 0.000 Tw /F2 5.0 Tf 0 Tr (  throw :label
+) Tj ET
+BT 528.667 32.029 Td 0.000 Tw /F2 5.0 Tf 0 Tr (end
+) Tj ET
+BT 528.667 26.754 Td 0.000 Tw /F2 5.0 Tf 0 Tr (
+) Tj ET
+q
+1 w 0 J 0 j [ ] 0 d
+0.000 0.000 0.000 RG
+528.667 24.254 m
+774.000 24.254 l S
+1 w
+Q
+BT 0.000 1.000 -1.000 0.000 779.580 18.000 Tm 0.000 Tw /F1 5.0 Tf 0 Tr (Copyright © 2005 Ryan Davis with Austin Ziegler. PDF version by Austin Ziegler. Licensed under the  ) Tj ET
+q
+0.000 0.000 1.000 rg
+0.000 0.000 1.000 RG
+0.279 w [ ] 0 d
+BT 0.000 1.000 -1.000 0.000 779.580 -188.025 Tm /F1 5.0 Tf 0 Tr (Creative Commons Attribution-NonCommercial-ShareAlike) Tj ET
+779.162 -188.025 m
+779.162 -309.405 l S
+1 w
+Q
+BT 0.000 1.000 -1.000 0.000 779.580 -309.405 Tm /F1 5.0 Tf 0 Tr ( Licence. The original HTML version is at ) Tj ET
+q
+0.000 0.000 1.000 rg
+0.000 0.000 1.000 RG
+0.279 w [ ] 0 d
+BT 0.000 1.000 -1.000 0.000 779.580 -395.640 Tm /F1 5.0 Tf 0 Tr (Zen Spider) Tj ET
+779.162 -395.640 m
+779.162 -417.720 l S
+1 w
+Q
+BT 0.000 1.000 -1.000 0.000 779.580 -417.720 Tm /F1 5.0 Tf 0 Tr (. Generated by ) Tj ET
+q
+0.000 0.000 1.000 rg
+0.000 0.000 1.000 RG
+0.279 w [ ] 0 d
+BT 0.000 1.000 -1.000 0.000 779.580 -448.265 Tm /F1 5.0 Tf 0 Tr (PDF::Writer) Tj ET
+779.162 -448.265 m
+779.162 -473.265 l S
+1 w
+Q
+BT 0.000 1.000 -1.000 0.000 779.580 -473.265 Tm /F1 5.0 Tf 0 Tr ( 1.1.8 and PDF::QuickRef 1.8.6.) Tj ET
+endstream
+endobj
+
+28 0 obj
+<<
+/Length 1206 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 23.000 585.304 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-a) Tj ET
+BT 75.697 585.304 Td 0.000 Tw /F1 6.0 Tf 0 Tr (True if option -a is set. Read-only variable.) Tj ET
+BT 23.000 574.608 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-d) Tj ET
+BT 75.697 574.608 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to $DEBUG.) Tj ET
+BT 23.000 563.912 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-F) Tj ET
+BT 75.697 563.912 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to $;.) Tj ET
+BT 23.000 553.216 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-i) Tj ET
+BT 75.697 553.216 Td 0.000 Tw /F1 6.0 Tf 0 Tr (In in-place-edit mode, this variable holds the extention, otherwise nil.) Tj ET
+BT 23.000 542.520 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-I) Tj ET
+BT 75.697 542.520 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to $:.) Tj ET
+BT 23.000 531.824 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-l) Tj ET
+BT 75.697 531.824 Td 0.000 Tw /F1 6.0 Tf 0 Tr (True if option -l is set. Read-only variable.) Tj ET
+BT 23.000 521.128 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-p) Tj ET
+BT 75.697 521.128 Td 0.000 Tw /F1 6.0 Tf 0 Tr (True if option -p is set. Read-only variable.) Tj ET
+BT 23.000 510.432 Td 0.000 Tw /F1 6.0 Tf 0 Tr ($-v) Tj ET
+BT 75.697 510.432 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to $VERBOSE.) Tj ET
+endstream
+endobj
+
+29 0 obj
+<<
+/Length 1986 >>
+stream
+
+BT 23.000 482.996 Td 0.000 Tw /F1 6.0 Tf 0 Tr (TRUE) Tj ET
+BT 103.725 482.996 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The typical true value.) Tj ET
+BT 23.000 472.300 Td 0.000 Tw /F1 6.0 Tf 0 Tr (FALSE) Tj ET
+BT 103.725 472.300 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The false itself.) Tj ET
+BT 23.000 461.604 Td 0.000 Tw /F1 6.0 Tf 0 Tr (NIL) Tj ET
+BT 103.725 461.604 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The nil itself.) Tj ET
+BT 23.000 450.908 Td 0.000 Tw /F1 6.0 Tf 0 Tr (STDIN) Tj ET
+BT 103.725 450.908 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The standard input. The default value for $stdin.) Tj ET
+BT 23.000 440.212 Td 0.000 Tw /F1 6.0 Tf 0 Tr (STDOUT) Tj ET
+BT 103.725 440.212 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The standard output. The default value for $stdout.) Tj ET
+BT 23.000 429.516 Td 0.000 Tw /F1 6.0 Tf 0 Tr (STDERR) Tj ET
+BT 103.725 429.516 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The standard error output. The default value for $stderr.) Tj ET
+BT 23.000 418.820 Td 0.000 Tw /F1 6.0 Tf 0 Tr (ENV) Tj ET
+BT 103.725 418.820 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The hash contains current environment variables.) Tj ET
+BT 23.000 408.124 Td 0.000 Tw /F1 6.0 Tf 0 Tr (ARGF) Tj ET
+BT 103.725 408.124 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to the $<.) Tj ET
+BT 23.000 397.428 Td 0.000 Tw /F1 6.0 Tf 0 Tr (ARGV) Tj ET
+BT 103.725 397.428 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The alias to the $*.) Tj ET
+BT 23.000 386.732 Td 0.000 Tw /F1 6.0 Tf 0 Tr (DATA) Tj ET
+BT 103.725 386.732 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The file object of the script, pointing just after __END__.) Tj ET
+BT 23.000 376.036 Td 0.000 Tw /F1 6.0 Tf 0 Tr (RUBY_VERSION) Tj ET
+BT 103.725 376.036 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The ruby version string \(VERSION was depricated\).) Tj ET
+BT 23.000 365.340 Td 0.000 Tw /F1 6.0 Tf 0 Tr (RUBY_RELEASE_DATE) Tj ET
+BT 103.725 365.340 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The relase date string.) Tj ET
+BT 23.000 354.644 Td 0.000 Tw /F1 6.0 Tf 0 Tr (RUBY_PLATFORM) Tj ET
+BT 103.725 354.644 Td 0.000 Tw /F1 6.0 Tf 0 Tr (The platform identifier.) Tj ET
+endstream
+endobj
+
+30 0 obj
+<<
+/Length 1057 >>
+stream
+
+BT 23.000 298.558 Td 0.000 Tw /F2 6.0 Tf 0 Tr (::) Tj ET
+BT 23.000 288.228 Td 0.000 Tw /F2 6.0 Tf 0 Tr ([]) Tj ET
+BT 23.000 277.898 Td 0.000 Tw /F2 6.0 Tf 0 Tr (**) Tj ET
+BT 23.000 267.568 Td 0.000 Tw /F2 6.0 Tf 0 Tr (- \(unary\) + \(unary\) ! ~) Tj ET
+BT 23.000 257.238 Td 0.000 Tw /F2 6.0 Tf 0 Tr (*  /  %) Tj ET
+BT 23.000 246.908 Td 0.000 Tw /F2 6.0 Tf 0 Tr (+  -) Tj ET
+BT 23.000 236.578 Td 0.000 Tw /F2 6.0 Tf 0 Tr (<<  >>) Tj ET
+BT 23.000 226.248 Td 0.000 Tw /F2 6.0 Tf 0 Tr (&) Tj ET
+BT 23.000 215.918 Td 0.000 Tw /F2 6.0 Tf 0 Tr (|  ^) Tj ET
+BT 23.000 205.588 Td 0.000 Tw /F2 6.0 Tf 0 Tr (>  >=  <  <=) Tj ET
+BT 23.000 195.258 Td 0.000 Tw /F2 6.0 Tf 0 Tr (<=> == === != =~ !~) Tj ET
+BT 23.000 184.928 Td 0.000 Tw /F2 6.0 Tf 0 Tr (&&) Tj ET
+BT 23.000 174.598 Td 0.000 Tw /F2 6.0 Tf 0 Tr (||) Tj ET
+BT 23.000 164.268 Td 0.000 Tw /F2 6.0 Tf 0 Tr (.. ...) Tj ET
+BT 23.000 153.938 Td 0.000 Tw /F2 6.0 Tf 0 Tr (= \(+=, -=, ...\)) Tj ET
+BT 23.000 143.608 Td 0.000 Tw /F2 6.0 Tf 0 Tr (not) Tj ET
+BT 23.000 133.278 Td 0.000 Tw /F2 6.0 Tf 0 Tr (and or) Tj ET
+endstream
+endobj
+
+31 0 obj
+<<
+/Length 628 >>
+stream
+
+BT 278.333 390.129 Td 0.000 Tw /F1 6.0 Tf 0 Tr (break) Tj ET
+BT 344.999 390.129 Td 0.000 Tw /F1 6.0 Tf 0 Tr (terminates loop immediately.) Tj ET
+BT 278.333 379.433 Td 0.000 Tw /F1 6.0 Tf 0 Tr (redo) Tj ET
+BT 344.999 379.433 Td 0.000 Tw /F1 6.0 Tf 0 Tr (immediately repeats w/o rerunning the condition.) Tj ET
+BT 278.333 368.737 Td 0.000 Tw /F1 6.0 Tf 0 Tr (next) Tj ET
+BT 344.999 368.737 Td 0.000 Tw /F1 6.0 Tf 0 Tr (starts the next iteration through the loop.) Tj ET
+BT 278.333 358.041 Td 0.000 Tw /F1 6.0 Tf 0 Tr (retry) Tj ET
+BT 344.999 358.041 Td 0.000 Tw /F1 6.0 Tf 0 Tr (restarts the loop, rerunning the condition.) Tj ET
+endstream
+endobj
+
+32 0 obj
+<<
+/Length 516 >>
+stream
+
+BT 278.333 319.445 Td 0.000 Tw /F1 6.0 Tf 0 Tr (method) Tj ET
+BT 278.333 308.749 Td 0.000 Tw /F1 6.0 Tf 0 Tr (obj.method) Tj ET
+BT 278.333 298.053 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Class::method) Tj ET
+BT 278.333 287.357 Td 0.000 Tw /F1 6.0 Tf 0 Tr (method\(arg1, arg2\)) Tj ET
+BT 278.333 276.661 Td 0.000 Tw /F1 6.0 Tf 0 Tr (method\(arg1, key1 => val1, key2 => val2, aval1, aval2\) { block }) Tj ET
+BT 278.333 265.965 Td 0.000 Tw /F1 6.0 Tf 0 Tr (method\(arg1, *[arg2, arg3]\) becomes: method\(arg1, arg2, arg3\)) Tj ET
+endstream
+endobj
+
+33 0 obj
+<<
+/Length 576 >>
+stream
+
+BT 278.333 125.924 Td 0.000 Tw /F1 6.0 Tf 0 Tr (arg_list := ['\('] [varname*] ['*' listname] ['&' blockname] ['\)']) Tj ET
+BT 278.333 115.228 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Arguments may have default values \(varname = expr\).) Tj ET
+BT 278.333 104.532 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Method definitions may not be nested.) Tj ET
+BT 278.333 93.836 Td 0.000 Tw /F1 6.0 Tf 0 Tr (method_name may be an operator: <=>, ==, ===, =~, <, <=, > >=, +, -, *, /, ) Tj ET
+BT 278.333 87.140 Td 0.000 Tw /F1 6.0 Tf 0 Tr (%, **, <<, >>, ~, +@, -@, [], []= \(the last takes two arguments\)) Tj ET
+endstream
+endobj
+
+34 0 obj
+<<
+/Length 572 >>
+stream
+
+BT 278.333 61.936 Td 0.000 Tw /F1 6.0 Tf 0 Tr (public) Tj ET
+BT 310.883 61.936 Td 0.000 Tw /F1 6.0 Tf 0 Tr (totally accessable.) Tj ET
+BT 278.333 51.240 Td 0.000 Tw /F1 6.0 Tf 0 Tr (protected) Tj ET
+BT 310.883 51.240 Td 0.000 Tw /F1 6.0 Tf 0 Tr (accessable only by instances of class and direct descendants. Even through ) Tj ET
+BT 310.883 44.544 Td 0.000 Tw /F1 6.0 Tf 0 Tr (hasA relationships. \(see below\)) Tj ET
+BT 278.333 33.848 Td 0.000 Tw /F1 6.0 Tf 0 Tr (private) Tj ET
+BT 310.883 33.848 Td 0.000 Tw /F1 6.0 Tf 0 Tr (accessable only by instances of class.) Tj ET
+endstream
+endobj
+
+35 0 obj
+<<
+/Length 1344 >>
+stream
+
+BT 533.667 497.757 Td 0.000 Tw /F1 6.0 Tf 0 Tr (attr_reader <attribute>[, ) Tj ET
+BT 533.667 491.061 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<attribute>]...) Tj ET
+BT 642.493 497.757 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Creates a read-only accessor for each ) Tj ET
+BT 642.493 491.061 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<attribute>.) Tj ET
+BT 533.667 480.365 Td 0.000 Tw /F1 6.0 Tf 0 Tr (attr_writer <attribute>[, ) Tj ET
+BT 533.667 473.669 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<attribute>]...) Tj ET
+BT 642.493 480.365 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Creates a write-only accessor for each ) Tj ET
+BT 642.493 473.669 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<attribute>.) Tj ET
+BT 533.667 462.973 Td 0.000 Tw /F1 6.0 Tf 0 Tr (attr <attribute> [, ) Tj ET
+BT 533.667 456.277 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<writable>]) Tj ET
+BT 642.493 462.973 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Equivalent to "attr_reader <attribute>; ) Tj ET
+BT 642.493 456.277 Td 0.000 Tw /F1 6.0 Tf 0 Tr (attr_writer <attribute> if ) Tj ET
+BT 642.493 449.581 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<writable>") Tj ET
+BT 533.667 438.885 Td 0.000 Tw /F1 6.0 Tf 0 Tr (attr_accessor <attribute>[, ) Tj ET
+BT 533.667 432.189 Td 0.000 Tw /F1 6.0 Tf 0 Tr (<attribute>]...) Tj ET
+BT 642.493 438.885 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Equivalent to "attr <attribute>, true" for ) Tj ET
+BT 642.493 432.189 Td 0.000 Tw /F1 6.0 Tf 0 Tr (each argument.) Tj ET
+endstream
+endobj
+
+36 0 obj
+<<
+/Length 715 >>
+stream
+
+BT 533.667 327.957 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Blocks are full closures, remembering their variable context.) Tj ET
+BT 533.667 317.261 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Blocks are invoked via yield and may be passed arguments.) Tj ET
+BT 533.667 306.565 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Block arguments may not have default parameters.) Tj ET
+BT 533.667 295.869 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Brace form \({/}\) has higher precedence and will bind to the last parameter if the invocation ) Tj ET
+BT 533.667 289.173 Td 0.000 Tw /F1 6.0 Tf 0 Tr (is made without parentheses.) Tj ET
+BT 533.667 278.477 Td 0.000 Tw /F1 6.0 Tf 0 Tr (do/end form has lower precedence and will bind to the invocation even without parentheses.) Tj ET
+endstream
+endobj
+
+37 0 obj
+<<
+/Length 966 >>
+stream
+
+BT 533.667 143.205 Td 0.000 Tw /F1 6.0 Tf 0 Tr (StandardError) Tj ET
+BT 584.729 143.205 Td 0.000 Tw /F1 6.0 Tf 0 Tr (LocalJumpError, SystemStackError, ZeroDivisionError, RangeError ) Tj ET
+BT 584.729 136.509 Td 0.000 Tw /F1 6.0 Tf 0 Tr (\(FloatDomainError\), SecurityError, ThreadError, IOError \(EOFError\), ) Tj ET
+BT 584.729 129.813 Td 0.000 Tw /F1 6.0 Tf 0 Tr (ArgumentError, IndexError, RuntimeError, TypeError, ) Tj ET
+BT 584.729 123.117 Td 0.000 Tw /F1 6.0 Tf 0 Tr (SystemCallError \(Errno::*\), RegexpError) Tj ET
+BT 533.667 112.421 Td 0.000 Tw /F1 6.0 Tf 0 Tr (SignalException) Tj ET
+BT 533.667 101.725 Td 0.000 Tw /F1 6.0 Tf 0 Tr (Interrupt) Tj ET
+BT 533.667 91.029 Td 0.000 Tw /F1 6.0 Tf 0 Tr (NoMemoryError) Tj ET
+BT 533.667 80.333 Td 0.000 Tw /F1 6.0 Tf 0 Tr (ScriptError) Tj ET
+BT 584.729 80.333 Td 0.000 Tw /F1 6.0 Tf 0 Tr (LoadError, NameError, SyntaxError, NotImplementedError) Tj ET
+BT 533.667 69.637 Td 0.000 Tw /F1 6.0 Tf 0 Tr (SystemExit) Tj ET
+endstream
+endobj
+
+38 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 39 0 R
+/Border [0 0 0]
+/H /I
+/Rect [779.5800 -189.1150 779.5800 -183.5350 ]
+>>
+endobj
+39 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://creativecommons.org/licenses/by-nc-sa/2.0/)
+>>
+endobj
+40 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 41 0 R
+/Border [0 0 0]
+/H /I
+/Rect [779.5800 -396.7300 779.5800 -391.1500 ]
+>>
+endobj
+41 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://www.zenspider.com/Languages/Ruby/QuickRef.html)
+>>
+endobj
+42 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 43 0 R
+/Border [0 0 0]
+/H /I
+/Rect [779.5800 -449.3550 779.5800 -443.7750 ]
+>>
+endobj
+43 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://rubyforge.org/projects/ruby-pdf/)
+>>
+endobj
+xref
+0 44
+0000000000 65535 f 
+0000000019 00000 n 
+0000000083 00000 n 
+0000000120 00000 n 
+0000000303 00000 n 
+0000000332 00000 n 
+0000000544 00000 n 
+0000000680 00000 n 
+0000010712 00000 n 
+0000010887 00000 n 
+0000010989 00000 n 
+0000011088 00000 n 
+0000011760 00000 n 
+0000011863 00000 n 
+0000011959 00000 n 
+0000012610 00000 n 
+0000012713 00000 n 
+0000012814 00000 n 
+0000013352 00000 n 
+0000014178 00000 n 
+0000018818 00000 n 
+0000019622 00000 n 
+0000019725 00000 n 
+0000019824 00000 n 
+0000021495 00000 n 
+0000022513 00000 n 
+0000027639 00000 n 
+0000027816 00000 n 
+0000042755 00000 n 
+0000044015 00000 n 
+0000046055 00000 n 
+0000047166 00000 n 
+0000047847 00000 n 
+0000048416 00000 n 
+0000049045 00000 n 
+0000049670 00000 n 
+0000051068 00000 n 
+0000051836 00000 n 
+0000052855 00000 n 
+0000052984 00000 n 
+0000053085 00000 n 
+0000053214 00000 n 
+0000053319 00000 n 
+0000053448 00000 n 
+
+trailer
+  << /Size 44
+     /Root 1 0 R
+ /Info 5 0 R
+  >>
+startxref
+53539
+%%EOF

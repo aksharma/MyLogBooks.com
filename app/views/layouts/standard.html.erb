@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="The free online logbook for airplane pilots." />
+  <meta name="keywords" content="mylogbooks, mylogbook, online logbook, web based logbook, pilot, airplane, aviation, aircraft, airline, airport, faa, faa knowledge test, aeronautical charts, aviation weather, flying, aviation school, flight school, duats, airport code, pilot, aircraft classifieds, airplane pictures, cessna, piper, flight, flying lesson, gps, ground school, pilot supplies, piper, flying school, flight planning" />
+  
+  <title>MyLogbooks.com: <%= controller.controller_name %><%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'style' %>
+
+  <%= javascript_include_tag :defaults %>
+
+  <%= stylesheet_link_tag "/javascripts/jscalendar-1.0/calendar-win2k-cold-1.css" %>
+  <%= javascript_include_tag "jscalendar-1.0/calendar.js" %>
+  <%= javascript_include_tag "jscalendar-1.0/lang/calendar-en.js" %>
+  <%= javascript_include_tag "jscalendar-1.0/calendar-setup.js" %>
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo">
+			MyLogBooks
+		</div>
+		<div id="linksmenu">
+             <% if logged_in? %>
+             	<%= link_to "Logout" , logout_url, :method => "POST" %>
+				<%= link_to 'Export Data', :action => :csv %>
+				<%= link_to 'Print Blank Page', :action => :pdf, :blank => true %>
+             <% else %>
+             	<%= link_to "Login" ,   login_url %>
+             	<%= link_to "Sign Up" , signup_url %>
+             	<%= link_to "Guest Login" , demo_url %>
+             <% end %>
+		</div>
+		<div id="content">
+						
+			<%= yield  %>
+			
+		</div>
+	</div>
+</body>
+</html>

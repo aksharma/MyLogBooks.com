@@ -1,0 +1,117 @@
+class LogrowsController < ApplicationController
+  # GET /logrows
+  # GET /logrows.xml
+  def index
+  	@userlogbook_id = current_user.userlogbooks.id
+    @logrows = Logrow.find(:all, :conditions => ["userlogbook_id = 1"])
+
+	@table_id = "pilottable"
+	@column_definitions = [
+	{:key => 'flt_dt', :label => "Flight Date", :resizeable => true, :sortable => true},
+	{:key => 'make_model', :label => "Make/ Model", :resizeable => true, :sortable => true},
+	{:key => 'aircraft_ident', :label => "Aircraft Ident.", :resizeable => true, :sortable => true},
+	{:key => 'from', :label => "From", :resizeable => true, :sortable => true},
+	{:key => 'to', :label => "To", :resizeable => true, :sortable => true},
+	{:key => 'remarks', :label => "Remarks", :resizeable => true, :sortable => true},
+	{:key => 'instr_appr', :label => "Instr. Appr.", :resizeable => true, :sortable => true},
+	{:key => 'ldgs', :label => "Ldgs.", :resizeable => true, :sortable => true},
+	{:key => 'sel', :label => "SEL", :resizeable => true, :sortable => true},
+	{:key => 'mel', :label => "MEL", :resizeable => true, :sortable => true},
+	{:key => 'xc', :label => "Cross Country", :resizeable => true, :sortable => true},
+	{:key => 'pic_xc', :label => "PIC Cross Country", :resizeable => true, :sortable => true},
+	{:key => 'day', :label => "Day", :resizeable => true, :sortable => true},
+	{:key => 'night', :label => "Night", :resizeable => true, :sortable => true},
+	{:key => 'actual_ifr', :label => "Actual I.", :resizeable => true, :sortable => true},
+	{:key => 'sim_ifr', :label => "Simul. I.", :resizeable => true, :sortable => true},
+	{:key => 'dual', :label => "Dual", :resizeable => true, :sortable => true},
+	{:key => 'pic', :label => "PIC", :resizeable => true, :sortable => true},
+	{:key => 'total', :label => "Total", :resizeable => true, :sortable => true}
+	]
+	@data_rows = []
+	for logrow in @logrows
+		row = {}
+		logrow.attribute_names.each do |f|
+			row[f] = logrow.send(f)
+		end
+		@data_rows << row
+	end
+#	@data_rows = [{:flt_dt => '05/01', :make_model => "C172"}]
+	@datatable = Yui4Rails::Widgets::DataTable.new(@table_id, @column_definitions, @data_rows, footer_row = "")
+
+    @datatable.paginate(5)
+
+  end
+
+  # GET /logrows/1
+  # GET /logrows/1.xml
+  def show
+    @logrow = Logrow.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @logrow }
+    end
+  end
+
+  # GET /logrows/new
+  # GET /logrows/new.xml
+  def new
+    @logrow = Logrow.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @logrow }
+    end
+  end
+
+  # GET /logrows/1/edit
+  def edit
+    @logrow = Logrow.find(params[:id])
+  end
+
+  # POST /logrows
+  # POST /logrows.xml
+  def create
+    @logrow = Logrow.new(params[:logrow])
+
+    respond_to do |format|
+      if @logrow.save
+        flash[:notice] = 'Logrow was successfully created.'
+        format.html { redirect_to(@logrow) }
+        format.xml  { render :xml => @logrow, :status => :created, :location => @logrow }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @logrow.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /logrows/1
+  # PUT /logrows/1.xml
+  def update
+    @logrow = Logrow.find(params[:id])
+
+    respond_to do |format|
+      if @logrow.update_attributes(params[:logrow])
+        flash[:notice] = 'Logrow was successfully updated.'
+        format.html { redirect_to(@logrow) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @logrow.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /logrows/1
+  # DELETE /logrows/1.xml
+  def destroy
+    @logrow = Logrow.find(params[:id])
+    @logrow.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(logrows_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

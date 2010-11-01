@@ -1,0 +1,123 @@
+# Filters added to this controller apply to all controllers in the application.
+# Likewise, all the methods added will be available for all controllers.
+
+class ApplicationController < ActionController::Base
+  helper :all # include all helpers, all the time
+  
+  layout 'standard'
+
+  include AuthenticatedSystem
+  before_filter :login_required
+  
+  def self.auto_complete_for_all(model, *attrs)
+  	attrs.each do |attr|
+  		self.auto_complete_for model, attr
+  	end
+  end
+
+  def self.in_place_edit_for_all(model, *attrs)
+  	attrs.each do |attr|
+  		self.in_place_edit_for model, attr
+  	end
+  end
+
+	def loadcolorder
+		colorder = %w(
+		flt_date
+		make_model
+		aircraft_ident
+		from
+		dest
+		remarks
+		instr_appr
+		landings
+		sel
+		mel
+		xc
+		pic_xc
+		day
+		night
+		actual_ifr
+		sim_ifr
+		dual
+		pic
+		total
+		)
+		@blank_rec = {}
+		colorder.each do |k|
+			@blank_rec[k] = ''
+		end
+		colorder	
+	end
+
+	def loadfieldmap
+		field_map = {}
+		field_map["flt_date"] = "Date"
+		field_map["make_model"] = "Make/\nModel"
+		field_map["aircraft_ident"] = "Aircraft\n Ident."
+		field_map["from"] = "From"
+		field_map["dest"] = "To"
+		field_map["remarks"] = "Remarks"
+		field_map["instr_appr"] = "Instr.\nAppr."
+		field_map["landings"] = "Ldgs."
+		field_map["sel"] = "SEL"
+		field_map["mel"] = "MEL"
+		field_map["xc"] = "Cross\nCountry"
+		field_map["pic_xc"] = "PIC Cross\nCountry"
+		field_map["day"] = "Day"
+		field_map["night"] = "Night"
+		field_map["actual_ifr"] = "Actual\nI."
+		field_map["sim_ifr"] = "Simul.\nI."
+		field_map["dual"] = "Dual"
+		field_map["pic"] = "PIC"
+		field_map["total"] = "Total"
+		@title_rec = []
+		@col_order.each do |k|
+			@title_rec << field_map[k].gsub(/\n/,' ')
+		end
+		field_map
+	end
+
+	def pagetotals
+#		i1 = i2 = i3 = i4 = i5 = i6 = i7 = i8 = i9 = i10 = i11 = i12 = i13 = 0
+		for logrow in @logrows
+				i1 = i1 ||= 0; i1 += logrow.instr_appr.to_i
+				i2 = i2 ||= 0; i2 += logrow.landings.to_i 
+				i3 = i3 ||= 0.0; i3 += logrow.sel.to_f 
+				i4 = i4 ||= 0.0; i4 += logrow.mel.to_f 
+				i5 = i5 ||= 0.0; i5 += logrow.xc.to_f 
+				i6 = i6 ||= 0.0; i6 += logrow.pic_xc.to_f 
+				i7 = i7 ||= 0.0; i7 += logrow.day.to_f 
+				i8 = i8 ||= 0.0; i8 += logrow.night.to_f 
+				i9 = i9 ||= 0.0; i9 += logrow.actual_ifr.to_f 
+				i10 = i10 ||= 0.0; i10 += logrow.sim_ifr.to_f 
+				i11 = i11 ||= 0.0; i11 += logrow.dual.to_f 
+				i12 = i12 ||= 0.0; i12 += logrow.pic.to_f 
+				i13 = i13 ||= 0.0; i13 += logrow.total.to_f 
+		end
+		i = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13]
+	end
+
+	def grandtotals
+		for logrow in @allrows
+				i1 = i1 ||= 0; i1 += logrow.instr_appr.to_i
+				i2 = i2 ||= 0; i2 += logrow.landings.to_i 
+				i3 = i3 ||= 0.0; i3 += logrow.sel.to_f 
+				i4 = i4 ||= 0.0; i4 += logrow.mel.to_f 
+				i5 = i5 ||= 0.0; i5 += logrow.xc.to_f 
+				i6 = i6 ||= 0.0; i6 += logrow.pic_xc.to_f 
+				i7 = i7 ||= 0.0; i7 += logrow.day.to_f 
+				i8 = i8 ||= 0.0; i8 += logrow.night.to_f 
+				i9 = i9 ||= 0.0; i9 += logrow.actual_ifr.to_f 
+				i10 = i10 ||= 0.0; i10 += logrow.sim_ifr.to_f 
+				i11 = i11 ||= 0.0; i11 += logrow.dual.to_f 
+				i12 = i12 ||= 0.0; i12 += logrow.pic.to_f 
+				i13 = i13 ||= 0.0; i13 += logrow.total.to_f 
+		end
+		i = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13]
+	end
+
+  # See ActionController::RequestForgeryProtection for details
+  # Uncomment the :secret if you're not using the cookie session store
+#  protect_from_forgery # :secret => '0492f19f048b95cfa79b7997027c6a00'
+end

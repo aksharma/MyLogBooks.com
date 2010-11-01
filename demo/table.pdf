@@ -1,0 +1,163 @@
+%PDF-1.3
+%√¢√£√è√ì
+
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R>>
+endobj
+2 0 obj
+<< /Type /Outlines >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+]
+/Count 1
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R >>
+>>
+/MediaBox [0 0 612.0 792.0]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/CreationDate (D:200806252042)
+/Creator (table.rb)
+/Producer (PDF::Writer for Ruby)
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents [
+7 0 R
+9 0 R
+]
+>>
+endobj
+7 0 obj
+<<
+/Length 462 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.800 0.800 0.800 RG
+BT 232.320 742.128 Td /F1 12.0 Tf 0 Tr (PDF User Unit Conversions) Tj ET
+BT 149.600 721.256 Td /F1 12.0 Tf 0 Tr (From) Tj ET
+BT 198.323 721.256 Td /F1 12.0 Tf 0 Tr (To) Tj ET
+BT 295.314 721.256 Td /F1 12.0 Tf 0 Tr (From) Tj ET
+BT 344.038 721.256 Td /F1 12.0 Tf 0 Tr (To) Tj ET
+q
+0.800 0.800 0.800 rg
+144.600 699.196 312.801 15.560 re f
+0.800 0.800 0.800 rg
+144.600 668.076 312.801 15.560 re f
+1 w
+Q
+endstream
+endobj
+
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<<
+/Length 1379 >>
+stream
+
+BT 149.600 703.446 Td /F1 10.0 Tf 0 Tr (1 point) Tj ET
+BT 198.323 703.446 Td /F1 10.0 Tf 0 Tr (0.3528 mm) Tj ET
+BT 295.314 703.446 Td /F1 10.0 Tf 0 Tr (1 point) Tj ET
+BT 344.038 703.446 Td /F1 10.0 Tf 0 Tr (1/72î) Tj ET
+q
+0.000 0.000 0.000 RG
+1 w
+144.600 714.756 m
+457.400 714.756 l S
+1 w
+Q
+BT 149.600 687.886 Td /F1 10.0 Tf 0 Tr (10 mm) Tj ET
+BT 198.323 687.886 Td /F1 10.0 Tf 0 Tr (28.35 pts) Tj ET
+q
+0.000 0.000 0.000 RG
+1 w
+144.600 699.196 m
+457.400 699.196 l S
+1 w
+Q
+BT 149.600 672.326 Td /F1 10.0 Tf 0 Tr (A4) Tj ET
+BT 198.323 672.326 Td /F1 10.0 Tf 0 Tr (210 mm ◊ 297 mm) Tj ET
+BT 295.314 672.326 Td /F1 10.0 Tf 0 Tr (A4) Tj ET
+BT 344.038 672.326 Td /F1 10.0 Tf 0 Tr (595.28 pts ◊ 841.89 pts) Tj ET
+q
+0.000 0.000 0.000 RG
+1 w
+144.600 683.636 m
+457.400 683.636 l S
+1 w
+Q
+BT 149.600 656.766 Td /F1 10.0 Tf 0 Tr (LETTER) Tj ET
+BT 198.323 656.766 Td /F1 10.0 Tf 0 Tr (81/2î ◊ 11î) Tj ET
+BT 295.314 656.766 Td /F1 10.0 Tf 0 Tr (LETTER) Tj ET
+BT 344.038 656.766 Td /F1 10.0 Tf 0 Tr (612 pts ◊ 792 pts) Tj ET
+q
+0.000 0.000 0.000 RG
+1 w
+144.600 668.076 m
+457.400 668.076 l S
+1 w
+Q
+0.000 0.000 0.000 RG
+1 w
+144.600 737.128 m
+144.600 652.516 l S
+1 w
+193.323 737.128 m
+193.323 652.516 l S
+290.314 737.128 m
+290.314 652.516 l S
+339.038 737.128 m
+339.038 652.516 l S
+1 w
+457.400 737.128 m
+457.400 652.516 l S
+144.100 737.128 m
+457.900 737.128 l S
+144.100 652.516 m
+457.900 652.516 l S
+endstream
+endobj
+
+xref
+0 10
+0000000000 65535 f 
+0000000019 00000 n 
+0000000083 00000 n 
+0000000120 00000 n 
+0000000262 00000 n 
+0000000291 00000 n 
+0000000396 00000 n 
+0000000469 00000 n 
+0000000983 00000 n 
+0000001090 00000 n 
+
+trailer
+  << /Size 10
+     /Root 1 0 R
+ /Info 5 0 R
+  >>
+startxref
+2522
+%%EOF

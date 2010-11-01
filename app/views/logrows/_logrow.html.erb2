@@ -1,0 +1,87 @@
+<%= error_messages_for :logrow %>
+
+<!--
+
+<table cellspacing="0" id="pilottable" summary="Logbook Data Entry.">
+
+<caption><h1>Logbook</h1></caption>
+<colgroup>
+	<col id="coldate" />
+	<col id="colmakemodel" />
+	<col id="colaircraftident" />
+	<col id="colfrom" />
+	<col id="colto" />
+	<col id="colremarks" />
+	<col id="colinstrappr" />
+	<col id="colldgs" />
+	<col id="colsel" />
+	<col id="colmel" />
+	<col id="colxc" />
+	<col id="colpicxc" />
+	<col id="colday" />
+	<col id="colnight" />
+	<col id="colactuali" />
+	<col id="colsimuli" />
+	<col id="coldual" />
+	<col id="colpic" />
+	<col id="coltotal" />
+</colgroup>	
+<thead>
+	<tr>
+		<th>Date</th>
+		<th>Make/ Model</th>
+		<th>Aircraft Ident.</th>
+		<th>From</th>
+		<th>To</th>
+		<th>Remarks</th>
+		<th>Instr. Appr.</th>
+		<th>Ldgs.</th>
+		<th>SEL</th>
+		<th>MEL</th>
+		<th>Cross Country</th>
+		<th>PIC Cross Country</th>
+		<th>Day</th>
+		<th>Night</th>
+		<th>Actual Instr.</th>
+		<th>Simul. Instr.</th>
+		<th>Dual</th>
+		<th>PIC</th>
+		<th>Total</th>
+	</tr>
+</thead>
+
+<tbody>
+-->
+<% form_for(@logrow) do |f| %>
+	<tr>
+		<td><%= f.date_select :flt_date, :size => 6 %></td>
+		<td><%= f.text_field :make_model, :size => 6 %></td>
+		<td><%= f.text_field :aircraft_ident, :size => 6 %></td>
+		<td><%= f.text_field :from, :size => 4 %></td>
+		<td><%= f.text_field :dest, :size => 4 %></td>
+		<td><%= f.text_field :remarks, :size => 24 %></td>
+		<td><%= f.text_field :instr_appr, :size => 3 %></td>
+		<td><%= f.text_field :landings, :size => 3 %></td>
+		<td><%= f.text_field :sel, :size => 3 %></td>
+		<td><%= f.text_field :mel, :size => 3 %></td>
+		<td><%= f.text_field :xc, :size => 3 %></td>
+		<td><%= f.text_field :pic_xc, :size => 3 %></td>
+		<td><%= f.text_field :day, :size => 3 %></td>
+		<td><%= f.text_field :night, :size => 3 %></td>
+		<td><%= f.text_field :actual_ifr, :size => 3 %></td>
+		<td><%= f.text_field :sim_ifr, :size => 3 %></td>
+		<td><%= f.text_field :dual, :size => 3 %></td>
+		<td><%= f.text_field :pic, :size => 3 %></td>
+		<td><%= f.text_field :total, :size => 3 %></td>
+    <td><%= f.submit "Submit" %></td>
+	</tr>
+<% end %>
+<!--
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+-->
+<br />
+
+<p><%= link_to 'Cancel', logrows_path %></p>

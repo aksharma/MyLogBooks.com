@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>MyLogbooks.com: <%= controller.controller_name %><%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'style' %>
+
+  <%= javascript_include_tag :defaults %>
+
+  <%= stylesheet_link_tag "/javascripts/jscalendar-1.0/calendar-win2k-cold-1.css" %>
+  <%= javascript_include_tag "jscalendar-1.0/calendar.js" %>
+  <%= javascript_include_tag "jscalendar-1.0/lang/calendar-en.js" %>
+  <%= javascript_include_tag "jscalendar-1.0/calendar-setup.js" %>
+
+
+</head>
+<body>
+	<div id="page" align="center">
+			<div class="titletext" id="logo">
+				<div class="logotext" style="margin:10px">
+				<span class="orangelogotext">M</span>y<span class="orangelogotext">L</span>og<span class="orangelogotext">B</span>ooks</div> 
+			</div>
+			<div id="linksmenu">
+				<div align="center" style="padding:12px;" class="smallwhitetext">
+                     <% if logged_in? %>
+                     	<%= link_to "Logout" , logout_url %>
+                     <% else %>
+                     	<%= link_to "Login" ,   login_url %>
+                     	<%= link_to "Sign Up" , signup_url %>
+                     <% end %>
+				</div>
+			</div>
+
+		<div id="content" align="center">
+			<div id="contenttext">
+				<div class="bodytext" style="padding:12px;" align="justify">
+				
+					<%= yield  %>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

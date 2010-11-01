@@ -1,0 +1,41 @@
+<h1>Pilot Profile</h1>
+
+<%= error_messages_for :userlogbook %>
+
+<fieldset>
+<% f=@userlogbook %>
+  <br />
+	<table>
+	<tr>
+	  	<p><td>Name: </td><td><%= f.username %></td></p>
+	</tr><tr>
+	  	<p><td>Address: </td><td><%= f.address.gsub(/\n/,"<br />") %></td></p>
+	</tr><tr>
+	  	<p><td>Phone Number(s):</td><td><%= f.phone.gsub(/\n/,"<br />") %></td></p>
+	</tr><tr>
+	  	<p><td>Student Pilot License #:</td><td><%= f.student_num %></td></p>
+	</tr><tr>
+	  	<p><td>Private Pilot License #:</td><td><%= f.ppl_num %></td></p>
+	</tr><tr>
+	  	<p><td>Date of Birth:</td>
+	  	<td><%= f.dob %></td></p>
+	</tr><tr>
+	  	<p><td>Last Medical:</td>
+	  	<td><%= f.last_medical %></td></p>
+	</tr><tr>
+	  	<p><td>Last Biennial Flight Review:</td>
+	  	<td><%= f.last_bfr %></td></p>
+	</tr><tr>
+	  	<p><td>Last Instrument Proficiency Check:</td>
+	  	<td><%= f.last_ipc %></td></p>
+	</tr><tr>
+	  	<p><td>Last PIC:</td>
+	  	<td><%= f.last_pic %></td></p>
+	</tr><tr>
+	  	<p><td>Last Night</td>
+	  	<td><%= f.last_night %></td></p>
+	</tr>
+	</table>
+</fieldset>
+
+<%= link_to 'Edit', edit_userlogbook_path(@userlogbook) %>

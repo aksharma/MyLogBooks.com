@@ -1,0 +1,42 @@
+<h1>Editing Profile</h1>
+
+<%= error_messages_for :userlogbook %>
+
+<fieldset>
+<% form_for(@userlogbook) do |f| %>
+  <br />
+	<table>
+	<tr>
+	  	<p><td>Name: </td><td><%= f.text_field :username, :size => 30 %></td></p>
+	</tr><tr>
+	  	<p><td>Address: </td><td><%= f.text_area :address, :rows => 4, :size => 20 %></td></p>
+	</tr><tr>
+	  	<p><td>Phone Number(s):</td><td><%= f.text_area :phone, :rows => 3, :columns => 20 %></td></p>
+	</tr><tr>
+	  	<p><td>Student Pilot License #:</td><td><%= f.text_field :student_num, :size => 30 %></td></p>
+	</tr><tr>
+	  	<p><td>Private Pilot License #:</td><td><%= f.text_field :ppl_num, :size => 30 %></td></p>
+	</tr><tr>
+	  	<p><td>Date of Birth:</td>
+	  	<td><%= f.date_select :dob, :order => [:month, :day, :year], :start_year => 1900, :include_blank => true %></td></p>
+	</tr><tr>
+	  	<p><td>Last Medical:</td>
+	  	<td><%= f.date_select :last_medical, :order => [:month, :day, :year], :start_year => 2000, :include_blank => true %></td></p>
+	</tr><tr>
+	  	<p><td>Last Biennial Flight Review:</td>
+	  	<td><%= f.date_select :last_bfr, :order => [:month, :day, :year], :start_year => 2000, :include_blank => true %></td></p>
+	</tr><tr>
+	  	<p><td>Last Instrument Proficiency Check:</td>
+	  	<td><%= f.date_select :last_ipc, :order => [:month, :day, :year], :start_year => 2000, :include_blank => true %></td></p>
+	</tr><tr>
+	  	<p><td>Last PIC:</td>
+	  	<td><%= f.date_select :last_pic, :order => [:month, :day, :year], :start_year => 2000, :include_blank => true %></td></p>
+	</tr><tr>
+	  	<p><td>Last Night</td>
+	  	<td><%= f.date_select :last_night, :order => [:month, :day, :year], :start_year => 2000, :include_blank => true %></td></p>
+	</tr>
+	</table>
+    <%= f.submit "Update" %>
+<% end %>
+</fieldset>
+<%= link_to 'Back', @userlogbook %>

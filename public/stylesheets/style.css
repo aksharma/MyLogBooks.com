@@ -1,0 +1,219 @@
+/* CSS Document */
+
+/*PAGE LAYOUT*/
+body {
+	background-color:#F7F7F7; 
+	margin: 0;
+	padding: 0;
+/*	font-size: 78%;*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, sans-serif;
+	color: #333;
+	text-align: center;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #F7F7F7;
+	text-align: left;
+}
+#logo{
+	float:left;
+	width:240px;
+	height:60px;
+	background-color:#F7F7F7;
+	border-left:solid 1px #999999;
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color: #000000;
+}
+#content{
+	margin: 10px;
+	float:left;
+	width:100%; 
+	background-color:#F7F7F7; 
+	min-height:580px;
+	font: 0.7em Tahoma, sans-serif;
+	color: #666666;
+}
+/********************** Links  **********************/
+#linksmenu a{
+	float:right; 
+}
+#actionlink a, #logrow_submit{
+	float:left;
+}
+#linksmenu a, #actionlink a, #demofs input, #joinfs input, .submits{
+	width:150px; 
+	height:20px; 
+	background-color:#66F;
+	border-left:solid 1px #FFFFFF;
+	border-bottom:solid 1px #FFFFFF;
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+	text-align: center;
+	padding-top:5px;
+	margin-top:15px;
+	margin-right:35px;
+}
+
+#demofs input, #joinfs input, .submits{
+	padding-bottom: 20px;
+}
+#linksmenu a:hover, #actionlink a:hover, #demofs input:hover, #joinfs input:hover, .submits:hover {
+	background-color:#44F;
+}
+/********************** Fieldsets  **********************/
+#signupfs {
+	background-color:#EEE; 
+	width:250px; 
+	border: solid 1px #999;
+	margin-left: 200px;
+	padding-left: 20px;
+}
+#tablefs {
+	width:90%;
+	text-align: center;
+}
+#entryfs {
+	width: 900px;
+	text-align: left;
+	color: #333333;
+}
+/********************** Home Page  **********************/
+#homefs{
+	width: 700px;
+	border: solid 1px #999;
+	background-color:#EEE; 
+	height: 409px;
+}
+#whatfs {
+	float: left;
+	padding-left: 20px;
+}
+#loginfs {
+	width:250px; 
+	border: solid 1px #999;
+	padding-left: 20px;
+	float: left;
+	clear: both;
+	height: 205px;
+}
+#demofs {
+	width:250px;
+	float: right;
+	clear: right;
+	border: solid 1px #999;
+	padding-left: 20px;
+	height: 205px;
+}
+#joinfs {
+	width:250px;
+	float: right;
+	border: solid 1px #999;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+/********************** Tables  **********************/
+table {
+	border-collapse: collapse;
+	width: 80em;
+	border: 1px solid #666;
+}
+caption {
+	font-size: 0.9em;
+	font-weight: normal;
+	margin: 1em 0;
+	text-align: right;
+}
+col {
+	border-right: 1px solid #ccc;
+}
+thead {
+	background: #ccc url(../images/bar1.gif) repeat-x left center;
+	border-top: 1px solid #a5a5a5;
+	border-bottom: 1px solid #a5a5a5;
+}
+th {
+	padding: 0.1em 1em;
+	font-weight: normal;
+/*	background: #E7F1E8; */
+	background: #EEEEFF;
+}
+tr {
+	border-bottom: 1px solid #a5a5a5;
+	height: 27px;	
+}
+td {
+	/*padding: 0.1em 1em;*/
+	margin: 0 0 0 0;
+	padding: 0 0 0 1;
+}
+td input {
+
+}
+tfoot {
+   background: #EEEEFF;
+/* background: #E0E0F0; */
+}
+/********************** individual cells  **********************/
+#spremarks {
+	width: 15em;
+	text-align: left;
+}
+#spfltdt {
+	width: 7em;
+}
+/********************** active_calendar  **********************/
+.calendar table {
+	width: 25em;
+}
+/********************** digg_pagination  **********************/
+.digg_pagination {
+	background: white;
+	/* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span {
+	padding: .2em .5em;
+	display: block;
+	float: left;
+	margin-right: 1px; }
+.digg_pagination span.disabled {
+	color: #999;
+	border: 1px solid #DDD; }
+.digg_pagination span.current {
+	font-weight: bold;
+	background: #2E6AB1;
+	color: white;
+	border: 1px solid #2E6AB1; }
+.digg_pagination a {
+	text-decoration: none;
+	color: #105CB6;
+	border: 1px solid #9AAFE5; }
+.digg_pagination a:hover, .digg_pagination a:focus {
+	  color: #003;
+	  border-color: #003; }
+.digg_pagination .page_info {
+/*	background: #2E6AB1; */
+	background: #99F;
+	color: white;
+	padding: .4em .6em;
+	width: 22em;
+	margin-bottom: .3em;
+	text-align: center; }
+.digg_pagination .page_info b {
+/*	  color: #003;
+	  background: #6aa6ed; */
+	  padding: .1em .25em; }
+.digg_pagination:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden; }
+* html .digg_pagination {
+	height: 1%; }
+*:first-child+html .digg_pagination {
+	overflow: hidden; }

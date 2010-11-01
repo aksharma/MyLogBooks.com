@@ -1,0 +1,89 @@
+<fieldset id="entryfs">
+
+<%= error_messages_for :logrow %>
+
+<div id="delbutton" style="float: right;">
+	<% if params[:id] %>
+		<%= button_to 'Delete This Entry', @logrow, :confirm => 'Are you sure?', :method => :delete, :class => "submits" %>
+		<br />
+	<% end %>
+</div>
+
+<% form_for(@logrow) do |f| %>
+
+<table cellspacing="0" id="pilottable" summary="Logbook Data Entry.">
+
+<caption><h1></h1></caption>
+<br />
+<br />
+<br />
+<tbody>
+	<tr>
+		<th>Date</th>
+		<th>Make/ Model</th>
+		<th>Aircraft Ident.</th>
+		<th>From</th>
+		<th>To</th>
+		<th>Remarks</th>
+	</tr>
+	<tr>
+		<td><%= f.date_select :flt_date, :size => 6 %></td>
+		<td><%= f.text_field :make_model, :size => 6 %></td>
+		<td><%= text_field_with_auto_complete :logrow, :aircraft_ident, :size => 6 %></td>
+		<td><%= f.text_field :from, :size => 6 %></td>
+		<td><%= f.text_field :dest, :size => 6 %></td>
+		<td><%= text_field_with_auto_complete :logrow, :remarks, :size => 24 %></td>
+	</tr>
+</table>
+<br />
+<br />
+<br />
+<table>
+	<tr>
+		<th>Instr. Appr.</th>
+		<th>Ldgs.</th>
+		<th>SEL</th>
+		<th>MEL</th>
+		<th>Cross Country</th>
+		<th>PIC Cross Country</th>
+	</tr>
+	<tr>
+		<td><%= f.text_field :instr_appr, :size => 8 %></td>
+		<td><%= f.text_field :landings, :size => 8 %></td>
+		<td><%= f.text_field :sel, :size => 8 %></td>
+		<td><%= f.text_field :mel, :size => 8 %></td>
+		<td><%= f.text_field :xc, :size => 8 %></td>
+		<td><%= f.text_field :pic_xc, :size => 8 %></td>
+	</tr>
+</table>
+<br />
+<br />
+<br />
+<table>
+	<tr>
+		<th>Day</th>
+		<th>Night</th>
+		<th>Actual Instr.</th>
+		<th>Simul. Instr.</th>
+		<th>Dual</th>
+		<th>PIC</th>
+		<th>Total</th>
+	</tr>
+	<tr>
+		<td><%= f.text_field :day, :size => 8 %></td>
+		<td><%= f.text_field :night, :size => 8 %></td>
+		<td><%= f.text_field :actual_ifr, :size => 8 %></td>
+		<td><%= f.text_field :sim_ifr, :size => 8 %></td>
+		<td><%= f.text_field :dual, :size => 8 %></td>
+		<td><%= f.text_field :pic, :size => 8 %></td>
+		<td><%= f.text_field :total, :size => 8 %></td>
+	</tr>
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+<br />
+<%= f.submit "Submit", :class => "submits" %>
+<% end %>
+</fieldset>
+<p><%= link_to 'Cancel', logrows_path %></p>

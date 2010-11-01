@@ -1,0 +1,54 @@
+<%= error_messages_for :logrow %>
+
+
+<fieldset id="pilotfs">
+
+	<h1>Pilot Logbook Entry</h1>
+    <div id="delbutton" style="float: right;">
+    	<%= button_to 'Delete This Entry', @logrow, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+
+	<% form_for(@logrow) do |f| %>
+	
+		<div style="float: left;">
+
+			<div>
+				<div style="float: left;"><p>Flight Date<br /><%= f.date_select :flt_date, :size => 6 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Make/ Model <br /><%= f.text_field :make_model, :size => 6 %></p></div>
+				<div style="float: left; padding-left: 2em;"><p>Aircraft Ident. <br /><%= text_field_with_auto_complete :logrow, :aircraft_ident, :size => 6 %></p></div>
+
+
+				<div style="float: left; padding-left: 6em;"><p>From <br /><%= f.text_field :from, :size => 4 %></p></div>
+				<div style="float: left; padding-left: 2em;"><p>To <br /><%= f.text_field :dest, :size => 4 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Remarks <br /><%= text_field_with_auto_complete :logrow, :remarks, :size => 24 %></p></div>
+			</div>
+	
+		</div>	
+		<div style="clear: left;">
+			<div style="clear: left;">
+				<div style="float: left; padding-left: 0em;"><p>Instr. Appr. <br /><%= f.text_field :instr_appr, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>Landings <br /><%= f.text_field :landings, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>SEL <br /><%= f.text_field :sel, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>MEL <br /><%= f.text_field :mel, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Cross Country <br /><%= f.text_field :xc, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>PIC Cross Country <br /><%= f.text_field :pic_xc, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Day <br /><%= f.text_field :day, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>Night <br /><%= f.text_field :night, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Actual IFR <br /><%= f.text_field :actual_ifr, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>Simul. IFR <br /><%= f.text_field :sim_ifr, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Dual <br /><%= f.text_field :dual, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 1em;"><p>PIC <br /><%= f.text_field :pic, :size => 3 %></p></div>
+				<div style="float: left; padding-left: 6em;"><p>Total <br /><%= f.text_field :total, :size => 3 %></p></div>
+			</div>
+
+		</div>
+
+		<div style="clear: left;">
+		    	<%= f.submit "Submit" %>
+		</div>
+<% end %>
+
+<br />
+</fieldset>
+<br />
+<p><%= link_to 'Cancel', logrows_path %></p>
